@@ -8,7 +8,6 @@ function setSize(){
   document.getElementById("gameContainer").style.width = clientWidth;
 }
 
-
 function gameWinTrue(){
-document.getElementById("conTainer")style.backgroundColor = "green";
+  document.getElementById("conTainer").style.backgroundColor = "lime";
 }

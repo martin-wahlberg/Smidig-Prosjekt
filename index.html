@@ -10,7 +10,8 @@
      var gameInstance = UnityLoader.instantiate("gameContainer", "./GameBuildWeb/Build/GameBuildWeb.json", {onProgress: UnityProgress});
    </script>
     <link rel="stylesheet" href="./css/indexStyle.css">
-     <script src="./js/indexScript.js"></script>
+    <script src="./js/indexScript.js"></script>
+
   <title>Kolonial.no</title>
 </head>
 <body onload="onLoadFunctions()">
@@ -35,11 +36,11 @@
     <div style="position:absolute; right:0; top:35%;">Oppskrifter</div>
   </div>
   <div class="buttonArea" id="lagKonto">
-    <div class="realLKBtn" style="color:white; text-align:center; line-height:35px;">Lag konto</div>
+    <div class="realLKBtn" style="color:white; text-align:center; line-height:35px;" onclick="gameWinTrue()">Lag konto</div>
   </div>
   <div class="buttonArea" id="loggInn">
   <div class="realLKBtn" style="color:#675f6b; text-align:center; line-height:35px; border:0px; background-color:white;">Lag konto</div></div>
-  <div class="buttonArea" id="handlekurv">
+  <div class="buttonArea" id="handlekurv" onclick="gameWinTrue()">
     <img src="./img/icons/cart.png" width="28px" height="24px" style="position:absolute; top:25%;">
   </div>
   <div class="buttonArea" id="expand"><div style="font-size:20px;line-height:60px;"><b><</b></div></div>
@@ -53,5 +54,10 @@
          </div>
 </div>
 </div>
+
+<script>
+
+</script>
+
 </body>
 </html>
