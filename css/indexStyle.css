@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "GT Walsheim Bold";
+  src: url("./css/gt-walsheim-bold-web.woff") format('woff');
+}
+@font-face {
+font-family: "GT Walsheim Medium";
+src: url("./css/gt-walsheim-medium-web.woff") format('woff');
+}
+@font-face {
+font-family: "GT Walsheim Regular";
+src: url("./css/gt-walsheim-web.woff") format('woff');
+}
+
+body {
+  font-family: 'GT Walsheim Regular', sans-serif;
+  font-size: 16px;
+  line-height: 1.42857;
+  color: #675f6b;
+  background-color: #fff;
+  overflow:hidden;
+}
+.container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  background-color: orange;
+overflow: hidden;
+}
+.headerArea{
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 105px;
+  background-color: red;
+  overflow: hidden;
+}
+.topHeader{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 60%;
+  background-color: white;
+  border-bottom: 2px solid lightgrey;
+}
+.bottomHeader{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 37%;
+  background-color: white;
+  border-bottom: 2px solid lightgrey;
+}
+.leftArea{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 42.4%;
+  height: 100%;
+
+}
+.logoArea{
+  position: absolute;
+  left: 2.3%;
+  top: 0;
+  width: 29%;
+  height: 100%;
+  background-color: white;
+
+}
+.searchArea{
+  position: absolute;
+  left: 33%;
+  top: 16%;
+  width: 67%;
+  height: 70%;
+  background-color: blue;
+}
+.rightArea{
+  position: absolute;
+  left: 64.7%;
+  top: 0;
+  width: 35.3%;
+  height: 100%;
+}
+
+.buttonArea{
+  position: absolute;
+}
+#varer{
+  height: 100%;
+  width: 14%;
+}
+#oppskrifter{
+  height: 100%;
+  width: 22%;
+  left: 17.5%;
+}
+#lagKonto{
+  height: 100%;
+  width: 17%;
+  left: 43%;
+}
+.realLKBtn{
+  position: absolute;
+  height:60%;
+  width: 98%;
+  top:20%;
+  background-color: #ffa514;
+  border: 1px solid #ffa514;
+  border-radius: 5px;
+}
+#loggInn{
+  height: 100%;
+  width: 17%;
+  left: 64%;
+}
+#handlekurv{
+  height: 100%;
+  width: 6%;
+  left: 83%;
+}
+#expand{
+  height: 100%;
+  width: 3.5%;
+  right:0;
+}
+
+.gameContainerC{
+position: absolute;
+top:22.5%;
+left:20%;
+height:70%;
+width:60%;
+}
