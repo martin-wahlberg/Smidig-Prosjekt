@@ -1,63 +1,56 @@
 <html>
-<head>
-  <meta charset="utf-8">
-   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-   <link rel="shortcut icon" href="./favicon.ico">
-   <link rel="stylesheet" href="./GameBuildWeb/TemplateData/style.css">
-   <script src="./GameBuildWeb/TemplateData/UnityProgress.js"></script>
-   <script src="./GameBuildWeb/Build/UnityLoader.js"></script>
-   <script>
-     var gameInstance = UnityLoader.instantiate("gameContainer", "./GameBuildWeb/Build/GameBuildWeb.json", {onProgress: UnityProgress});
-   </script>
-    <link rel="stylesheet" href="./css/indexStyle.css">
-    <script src="./js/indexScript.js"></script>
+<body>
+  <input type="text" placeholder="e-post" id="mailIn">
+  <input type="password" placeholder="passord" id="pwIn">
+  <input type="button" value="Logg Inn" onclick="loggInn()">
+  <br><br><br><br>
+  <div id="output">Output kommer her</div>
+  <script>
+  var usrName;
+  var usrPw;
+  var url;
 
-  <title>Kolonial.no</title>
-</head>
-<body onload="onLoadFunctions()">
-  <div class="container" id="conTainer">
-  <div class="headerArea">
-  <div class="topHeader">
-  <div class="leftArea">
-  <div class="logoArea">
-    <img src="./img/logo.png" alt="Smiley face" width="100%" height="37%" style="position:absolute; top:35%;">
-  </div>
-  <div class="searchArea">
-    <input type="text" placeholder="Søk i 6000 varer!" style="position:absolute;height:100%;width:100%;">
-  </div>
-  </div>
-  <div class="rightArea">
-  <div class="buttonArea" id="varer">
-  <img src="./img/icons/groceries.png" width="25px" height="27px" style="position:absolute; left:10%; top:30%;">
-  <div style="position:absolute; right:0; top:35%;">Varer</div>
-  </div>
-  <div class="buttonArea" id="oppskrifter">
-    <img src="./img/icons/cutlery.png" width="20px" height="25px" style="position:absolute; left:2%; top:30%;">
-    <div style="position:absolute; right:0; top:35%;">Oppskrifter</div>
-  </div>
-  <div class="buttonArea" id="lagKonto">
-    <div class="realLKBtn" style="color:white; text-align:center; line-height:35px;" onclick="gameWinTrue()">Lag konto</div>
-  </div>
-  <div class="buttonArea" id="loggInn">
-  <div class="realLKBtn" style="color:#675f6b; text-align:center; line-height:35px; border:0px; background-color:white;">Lag konto</div></div>
-  <div class="buttonArea" id="handlekurv" onclick="gameWinTrue()">
-    <img src="./img/icons/cart.png" width="28px" height="24px" style="position:absolute; top:25%;">
-  </div>
-  <div class="buttonArea" id="expand"><div style="font-size:20px;line-height:60px;"><b><</b></div></div>
-  </div>
-</div>
-<div class="bottomHeader"></div>
-</div>
-<div class="gameContainerC" id="gCS">
-  <div class="webgl-content">
-        <div id="gameContainer" style="width: 0%; height:0%;"></div>
-         </div>
-</div>
-</div>
+  function loggInn(){
+    usrName = document.getElementById('mailIn').value;
+    usrPw = document.getElementById('pwIn').value;
 
-<script>
+    usrName = encodeURIComponent(usrName);
+    usrPw = encodeURIComponent(usrPw);
+    url = "https://kolonial.martinwahlberg.no/pages/auth.php?mail=" + usrName + "&pw=" + usrPw;
+    loadJson();
+  }
 
-</script>
+  function loadJson() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    var jsonTx = this.responseText;
+    parseJson(jsonTx);
+    }
+    };
+    xhttp.open("GET", url, true);
+    xhttp.send();
+  }
 
+  function parseJson(jsonRx) {
+    document.getElementById("output").innerHTML = jsonRx;
+
+    var obj = JSON.parse(jsonRx);
+    var auth = obj.auth;
+    var id = obj.id;
+    var firstName = obj.firstName;
+    var lastName = obj.lastName;
+    var mail = obj.mail;
+    if(auth == "1"){
+      window.location.href = "https://kolonial.martinwahlberg.no/pages/spill.html";
+    }
+    else{
+      window.alert("Ugyldig brukernavn/passord!")
+    }
+  }
+
+
+
+  </script>
 </body>
 </html>
