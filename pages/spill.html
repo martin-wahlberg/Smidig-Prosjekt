@@ -1,5 +1,6 @@
 <html>
 <head>
+  <script src="../js/spillScript.js"></script>
   <meta charset="utf-8">
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
    <link rel="shortcut icon" href="../favicon.ico">
@@ -9,8 +10,9 @@
    <script>
      var gameInstance = UnityLoader.instantiate("gameContainer", "../GameBuildWeb/Build/GameBuildWeb.json", {onProgress: UnityProgress});
    </script>
+    <link rel="stylesheet" href="../css/commonStyle.css">
     <link rel="stylesheet" href="../css/spillStyle.css">
-    <script src="../js/spillScript.js"></script>
+
 
   <title>Kolonial.no</title>
 </head>
@@ -46,7 +48,10 @@
   <div class="buttonArea" id="expand"><div style="font-size:20px;line-height:60px;"><b><</b></div></div>
   </div>
 </div>
-<div class="bottomHeader"></div>
+<div class="bottomHeader"> <div class="textArea" id="tA1">
+  Hei, Bruker!
+</div>
+</div>
 </div>
 <div class="gameContainerC" id="gCS">
   <div class="webgl-content">

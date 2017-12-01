@@ -1,0 +1,94 @@
+#mailIn::-webkit-input-placeholder {
+  color: white;
+  font-size: 22px;
+}
+
+
+#mailIn:-ms-input-placeholder {
+  color: white;
+  font-size: 22px;
+}
+
+
+#mailIn::placeholder {
+  color: white;
+  font-size: 22px;
+}
+#pwIn::-webkit-input-placeholder {
+  color: white;
+  font-size: 22px;
+}
+#pwIn:-ms-input-placeholder {
+  color: white;
+  font-size: 22px;
+}
+#pwIn::placeholder {
+  color: white;
+  font-size: 22px;
+}
+
+
+.loginContainer{
+position: absolute;
+top:22.5%;
+left:35%;
+height:60%;
+width:30%;
+background-color: rgba(0, 0, 0, 0.5);
+color: white;
+}
+
+#headerIn{
+position: absolute;
+top: 0%;
+left:10%;
+width: 80%;
+text-align: center;
+
+}
+
+#mailIn{
+  position: absolute;
+  top:30%;
+  left:10%;
+  width: 80%;
+  height:15%;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border:none;
+  color: white;
+
+}
+
+#pwIn{
+  position: absolute;
+  top:55%;
+  left:10%;
+  width: 80%;
+  height:15%;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+}
+#btnIn{
+  position: absolute;
+  top:75%;
+  left:10%;
+  width: 80%;
+  height:15%;
+  font-size: 20px;
+  background-color: #ffa514;
+  border: none;
+  color: white;
+}
+
+.imageBox{
+  position: absolute;
+  width: 100%;
+  height:60%;
+  top:105px;
+  background-color: cyan;
+  background-image: url(../img/delivery.jpg);
+  background-size: cover;
+  background-position: center;
+}
