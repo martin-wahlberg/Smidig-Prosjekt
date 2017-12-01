@@ -68,17 +68,17 @@ overflow: hidden;
   position: absolute;
   left: 2.3%;
   top: 0;
-  width: 29%;
+  width: 176px;
   height: 100%;
   background-color: white;
 
 }
 .searchArea{
   position: absolute;
-  left: 33%;
-  top: 16%;
-  width: 67%;
-  height: 70%;
+  left: 206px;
+  top: 17%;
+  width: 66%;
+  height: 64%;
   background-color: blue;
 }
 .rightArea{
@@ -134,4 +134,10 @@ overflow: hidden;
 .textArea{
   position: absolute;
   height: 100%;
+}
+#search::-webkit-input-placeholder {
+  font-family: 'GT Walsheim Regular', sans-serif;
+  color: #999999;
+  font-size: 13px;
+  padding: 10px;
 }

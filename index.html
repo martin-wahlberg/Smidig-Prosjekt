@@ -5,17 +5,18 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/commonStyle.css">
     <link rel="stylesheet" href="./css/indexStyle.css">
+    <script src="./js/commonScript.js"></script>
 </head>
 <body onload="onLoadFunctions()">
   <div class="container" id="conTainer">
   <div class="headerArea">
   <div class="topHeader">
   <div class="leftArea">
-  <div class="logoArea">
-    <img src="./img/logo.png" alt="Smiley face" width="100%" height="37%" style="position:absolute; top:35%;">
+  <div class="logoArea" id="logoArea">
+    <img src="./img/logo.png" id="logo" alt="Smiley face" width="176px" height="21px" style="position:absolute; top:35%;">
   </div>
   <div class="searchArea">
-    <input type="text" placeholder="Søk i 6000 varer!" style="position:absolute;height:100%;width:100%;">
+    <input id="search" type="text" placeholder="Søk i 6000 varer!" style="position:absolute;height:100%;width:100%; border:1px solid grey;">
   </div>
   </div>
   <div class="rightArea">
@@ -42,7 +43,7 @@
 </div>
 <div class="imageBox">
 <div class="loginContainer" id="gCS">
-  <h2 id="headerIn">Logg Inn</h2>
+  <p id="headerIn">VÆLKØMMIN!<p>
   <input type="text" placeholder="E-post" id="mailIn">
   <input type="password" placeholder="Passord" id="pwIn">
   <input type="button" value="Logg Inn" id="btnIn" onclick="loggInn()">

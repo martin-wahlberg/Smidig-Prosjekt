@@ -9,5 +9,6 @@ background-color: white;
 
 #tA1{
   width: 15%;
+  min-width: 100px;
   left: 1%;
 }
