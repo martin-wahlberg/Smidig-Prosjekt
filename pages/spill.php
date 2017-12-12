@@ -1,5 +1,7 @@
 <html>
 <head>
+  <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+   <META HTTP-EQUIV="Expires" CONTENT="-1">
   <script src="../js/spillScript.js"></script>
   <script src="../js/commonScript.js"></script>
   <meta charset="utf-8">
