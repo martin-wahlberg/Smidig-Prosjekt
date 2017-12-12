@@ -44,7 +44,7 @@
 </div>
 <div class="imageBox">
 <div class="loginContainer" id="gCS">
-  <p id="headerIn">VÆLKØMMIN!<p>
+  <p id="headerIn">VÆLKØMMIN!</p>
   <input type="text" placeholder="E-post" id="mailIn">
   <input type="password" placeholder="Passord" id="pwIn">
   <input type="button" value="Logg Inn" id="btnIn" onclick="loggInn()">
@@ -55,7 +55,8 @@
 var usrName;
 var usrPw;
 var url;
-
+var url2;
+var userInfo=[];
 function loggInn(){
   usrName = document.getElementById('mailIn').value;
   usrPw = document.getElementById('pwIn').value;
@@ -86,17 +87,40 @@ function parseJson(jsonRx) {
   var lastName = obj.lastName;
   var mail = obj.mail;
   if(auth == "1"){
-    var userInfo=[];
+    mail = encodeURIComponent(mail);
+    firstName = encodeURIComponent(firstName);
+    lastName = encodeURIComponent(lastName);
     userInfo.push(firstName);
     userInfo.push(lastName);
     userInfo.push(mail);
-    var userInfoString = JSON.stringify(userInfo);
-    document.cookie = "userInfo=" + userInfoString;
-    window.location.href = "https://kolonial.martinwahlberg.no/pages/spill.html";
+
+    url2 = "https://kolonial.martinwahlberg.no/pages/policy.php?intention=login&userEmail=" + mail + "&userFName=" + firstName + "&userLName=" + lastName + "&authToken=" + id;
+    logInHTTP();
+
   }
   else{
     window.alert("Ugyldig brukernavn/passord!")
   }
+}
+
+function loginSteps(){
+
+  var userInfoString = JSON.stringify(userInfo);
+  document.cookie = "userInfo=" + userInfoString;
+ window.location.href = "https://kolonial.martinwahlberg.no/pages/spill.html";
+}
+
+function logInHTTP() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+  var jsonTx = this.responseText;
+  loginSteps();
+
+  }
+  };
+  xhttp.open("GET", url2, true);
+  xhttp.send();
 }
 
 
