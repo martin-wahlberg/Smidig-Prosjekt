@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <?php
-include './pages/policy.php';
 
 ?>
 <head>

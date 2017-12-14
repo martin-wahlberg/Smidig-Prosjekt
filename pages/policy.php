@@ -16,6 +16,7 @@ if(!isset($_COOKIE[$cookie_name])) {
   $cookieEmail = $obj[2];
   $userEmail = $obj[2];
 }
+$sidenavn = basename($_SERVER['PHP_SELF']);
 
 
 
@@ -91,16 +92,10 @@ else{
 }
 }
 else{
-  $sidenavn = basename($_SERVER['PHP_SELF']);
-  if($cookieToken == $sqlAuth || $cookieEmail == $sqlEmail){
-    if($sidenavn == "index.php"){
-    echo '<script>window.location.href = "https://kolonial.martinwahlberg.no/pages/spill.php";</script>';
-  }
-}
-else{
+  if($cookieToken != $sqlAuth || $cookieEmail != $sqlEmail){
   echo '<script>window.location.href = "https://kolonial.martinwahlberg.no";</script>';
-
 }
+
 }
 
 ?>
