@@ -1,3 +1,7 @@
+<?php
+include './policy.php';
+
+?>
 <html>
 <head>
   <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
@@ -52,7 +56,6 @@
   </div>
 </div>
 <div class="bottomHeader"> <div class="textArea" id="tA1">
-  Hei, Martin Wahlberg!
 </div>
 </div>
 </div>
