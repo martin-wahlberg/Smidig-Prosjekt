@@ -55,8 +55,9 @@ include './policy.php';
   <div class="buttonArea" id="expand"><div style="font-size:20px;line-height:60px;"><b><</b></div></div>
   </div>
 </div>
-<div class="bottomHeader"> <div class="textArea" id="tA1">
-</div>
+<div class="bottomHeader">
+  <div class="textArea" id="tA1"></div>
+  <div class="textArea" id="tA2"></div>
 </div>
 </div>
 <div class="gameContainerC" id="gCS">

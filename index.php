@@ -89,6 +89,7 @@ function parseJson(jsonRx) {
   var firstName = obj.firstName;
   var lastName = obj.lastName;
   var mail = obj.mail;
+  var points = obj.points;
   if(auth == "1"){
     userInfo.push(firstName);
     userInfo.push(lastName);
