@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<?php
+
+?>
 <head>
   <title>Kolonial.no</title>
     <meta charset="utf-8">
@@ -87,12 +90,10 @@ function parseJson(jsonRx) {
   var lastName = obj.lastName;
   var mail = obj.mail;
   if(auth == "1"){
-    mail = encodeURIComponent(mail);
-    firstName = encodeURIComponent(firstName);
-    lastName = encodeURIComponent(lastName);
     userInfo.push(firstName);
     userInfo.push(lastName);
     userInfo.push(mail);
+    userInfo.push(id);
 
     url2 = "https://kolonial.martinwahlberg.no/pages/policy.php?intention=login&userEmail=" + mail + "&userFName=" + firstName + "&userLName=" + lastName + "&authToken=" + id;
     logInHTTP();
@@ -107,7 +108,7 @@ function loginSteps(){
 
   var userInfoString = JSON.stringify(userInfo);
   document.cookie = "userInfo=" + userInfoString;
- window.location.href = "https://kolonial.martinwahlberg.no/pages/spill.html";
+ window.location.href = "https://kolonial.martinwahlberg.no/pages/spill.php";
 }
 
 function logInHTTP() {
