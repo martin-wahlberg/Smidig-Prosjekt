@@ -4,10 +4,13 @@ var lastName;
 var mail;
 var url;
 var token;
+var points;
+mail = encodeURIComponent(mail);
 function onLoadFunctions(){
   setGameSize();
   setBottomHeaderSizes();
   restoreArray();
+  callPoints();
 }
 function setGameSize(){
   var clientHeight = document.getElementById('gCS').clientHeight;
@@ -20,11 +23,15 @@ function gameWinTrue(points){
   document.getElementById("conTainer").style.backgroundColor = "lime";
   url = "https://kolonial.martinwahlberg.no/pages/pointsCall.php?points=" + points + "&authToken=" + token + "&userEmail=" + mail;
   sendPoints();
+  callPoints();
+  window.alert(points)
 }
 
 function setBottomHeaderSizes(){
   var clientHeight = document.getElementById('tA1').clientHeight;
   document.getElementById("tA1").style.lineHeight = clientHeight + "px";
+  var clientHeight = document.getElementById('tA2').clientHeight;
+  document.getElementById("tA2").style.lineHeight = clientHeight + "px";
 }
 function restoreArray(){
   var jsonUserInfo = getCook('userInfo');
@@ -34,10 +41,21 @@ function restoreArray(){
   mail = userInfo[2];
   token = userInfo[3];
   document.getElementById("tA1").innerHTML = "Hei, " + firstName + " " + lastName + "!";
-    mail = encodeURIComponent(mail);
 
 }
+function callPoints(){
+  var url = "https://kolonial.martinwahlberg.no/pages/getPoints.php?mail=" + mail;
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+  var jsonTx = this.responseText;
+  document.getElementById("tA2").innerHTML = "Du har " + jsonTx + " poeng!";
+  }
+  };
+  xhttp.open("GET", url, true);
+  xhttp.send();
 
+}
 function getCook(cookiename) {
 	// Get name followed by anything except a semicolon
 	let cookiestring = RegExp("" + cookiename + "[^;]+").exec(document.cookie);
@@ -51,7 +69,6 @@ function sendPoints(){
   if (this.readyState == 4 && this.status == 200) {
   var jsonTx = this.responseText;
 //Callback her
-window.alert("sendt")
   }
   };
   xhttp.open("GET", url, true);

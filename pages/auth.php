@@ -1,4 +1,5 @@
 <?php
+include('connection.php');
 $loginMail = $_GET['mail'];
 $loginPw = $_GET['pw'];
 $loginMail = urldecode($loginMail);
@@ -7,7 +8,7 @@ $loginPw = urldecode($loginPw);
 $ch = curl_init();
 
 // Set url
-curl_setopt($ch, CURLOPT_URL, 'https://kolonial.no/api/v1/user/login/?q=epok');
+curl_setopt($ch, CURLOPT_URL, 'https://kolonial.no/api/v1/user/login/');
 
 // Set method
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
@@ -57,6 +58,29 @@ $lastName = (string)$user->{'last_name'};
 $uEmail = (string)$user->{'email'};
 ?>
 
+<?php
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT totalPoints FROM points WHERE pointMail = '$loginMail'";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        $points = $row["totalPoints"];
+    }
+} else {
+    $points = 0;
+}
+$conn->close();
+?>
+
+
 
   <?php
   echo "{";
@@ -64,6 +88,7 @@ $uEmail = (string)$user->{'email'};
   echo "\"id\":\"$id\", ";
   echo "\"firstName\":\"$firstName\", ";
   echo "\"lastName\":\"$lastName\", ";
-  echo "\"mail\":\"$uEmail\"";
+  echo "\"mail\":\"$uEmail\", ";
+  echo "\"points\":\"$points\"";
   echo "}";
   ?>
