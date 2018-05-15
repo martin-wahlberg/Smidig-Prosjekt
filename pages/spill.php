@@ -1,5 +1,5 @@
 <?php
-include './policy.php';
+include('policy.php');
 
 ?>
 <html>

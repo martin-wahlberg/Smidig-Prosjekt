@@ -20,11 +20,11 @@ function setGameSize(){
 }
 
 function gameWinTrue(points){
+  window.alert(points);
   document.getElementById("conTainer").style.backgroundColor = "lime";
   url = "https://kolonial.martinwahlberg.no/pages/pointsCall.php?points=" + points + "&authToken=" + token + "&userEmail=" + mail;
   sendPoints();
   callPoints();
-  window.alert(points)
 }
 
 function setBottomHeaderSizes(){
