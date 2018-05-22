@@ -19,6 +19,7 @@ include('policy.php');
    </script>
     <link rel="stylesheet" href="../css/commonStyle.css">
     <link rel="stylesheet" href="../css/spillStyle.css">
+    <link rel="stylesheet" href="../css/profilStyle.css">
 
 
   <title>Kolonial.no</title>
@@ -44,8 +45,8 @@ include('policy.php');
     <img src="../img/icons/cutlery.png" width="20px" height="25px" style="position:absolute; left:2%; top:30%;">
     <div style="position:absolute; right:0; top:35%;">Oppskrifter</div>
   </div>
-  <div class="buttonArea" id="lagKonto">
-    <div class="realLKBtn" style="color:white; text-align:center; line-height:35px;" onclick="gameWinTrue()">Lag konto</div>
+  <div class="buttonArea" id="lagKonto">x
+    <div class="realLKBtn" style="color:white; text-align:center; line-height:35px;">Vis profil</div>
   </div>
   <div class="buttonArea" id="loggInn">
   <div class="realLKBtn" style="color:#675f6b; text-align:center; line-height:35px; border:0px; background-color:white;">Lag konto</div></div>
@@ -65,6 +66,27 @@ include('policy.php');
         <div id="gameContainer" style="width: 0%; height:0%;"></div>
          </div>
 </div>
+</div>
+
+
+<div id="profileArea">
+  <div id="profileHeaderArea"></div>
+  <div class="profileBtn" id="pBtn1">Bytt inn poeng i tilbudskupponger</div>
+  <div class="profileBtn" id="pBtn2">Delta i hovedlotteri</div>
+  <div id="couponArea">
+      <div class="couponThing">
+        <div class="imageplace" id="imgC1"></div>
+        <div class="headerAreaCoupon">Tine meieri smør</div>
+      </div>
+      <div class="couponThing">
+
+
+      </div>
+      <div class="couponThing">
+
+
+      </div>
+  </div>
 </div>
 
 <script>
