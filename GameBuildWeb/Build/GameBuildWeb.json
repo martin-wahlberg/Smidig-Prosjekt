@@ -4,6 +4,6 @@
 "asmCodeUrl": "GameBuildWeb.asm.code.unityweb",
 "asmMemoryUrl": "GameBuildWeb.asm.memory.unityweb",
 "asmFrameworkUrl": "GameBuildWeb.asm.framework.unityweb",
-"splashScreenStyle": "Dark",
-"backgroundColor": "#231F20"
+"splashScreenStyle": "Light",
+"backgroundColor": "#ECAB58"
 }
