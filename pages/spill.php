@@ -7,6 +7,7 @@ include('policy.php');
   <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
    <META HTTP-EQUIV="Expires" CONTENT="-1">
   <script src="../js/spillScript.js"></script>
+  <script src="../js/profileScript.js"></script>
   <script src="../js/commonScript.js"></script>
   <meta charset="utf-8">
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -65,29 +66,34 @@ include('policy.php');
   <div class="webgl-content">
         <div id="gameContainer" style="width: 0%; height:0%;"></div>
          </div>
+
+         <div id="profileArea">
+           <div id="profileHeaderArea"></div>
+           <div class="profileBtn" id="pBtn1">Bytt inn poeng i tilbudskupponger</div>
+           <div class="profileBtn" id="pBtn2">Delta i hovedlotteri</div>
+           <div id="couponArea">
+               <div class="couponThing">
+                 <div class="imageplace" id="imgC1"></div>
+                 <div class="headerAreaCoupon">Tine meieri smør</div>
+                 <div class="discountAreaCoupon">Få 20% Rabatt på neste kjøp.</div>
+                 <div class="pyntDiscount"></div>
+                 <div class="buttonAreaCoupon">Løs inn(1p)</div>
+               </div>
+               <div class="couponThing">
+
+
+               </div>
+               <div class="couponThing">
+
+
+               </div>
+           </div>
+         </div>
 </div>
 </div>
 
 
-<div id="profileArea">
-  <div id="profileHeaderArea"></div>
-  <div class="profileBtn" id="pBtn1">Bytt inn poeng i tilbudskupponger</div>
-  <div class="profileBtn" id="pBtn2">Delta i hovedlotteri</div>
-  <div id="couponArea">
-      <div class="couponThing">
-        <div class="imageplace" id="imgC1"></div>
-        <div class="headerAreaCoupon">Tine meieri smør</div>
-      </div>
-      <div class="couponThing">
 
-
-      </div>
-      <div class="couponThing">
-
-
-      </div>
-  </div>
-</div>
 
 <script>
 
