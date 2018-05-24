@@ -6,6 +6,7 @@ include('policy.php');
 <head>
   <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
    <META HTTP-EQUIV="Expires" CONTENT="-1">
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="../js/spillScript.js"></script>
   <script src="../js/profileScript.js"></script>
   <script src="../js/commonScript.js"></script>
@@ -46,8 +47,8 @@ include('policy.php');
     <img src="../img/icons/cutlery.png" width="20px" height="25px" style="position:absolute; left:2%; top:30%;">
     <div style="position:absolute; right:0; top:35%;">Oppskrifter</div>
   </div>
-  <div class="buttonArea" id="lagKonto">x
-    <div class="realLKBtn" style="color:white; text-align:center; line-height:35px;">Vis profil</div>
+  <div class="buttonArea" id="lagKonto">
+    <div class="realLKBtn" style="color:white; text-align:center; line-height:35px;" onclick="profileTogle()">Vis profil</div>
   </div>
   <div class="buttonArea" id="loggInn">
   <div class="realLKBtn" style="color:#675f6b; text-align:center; line-height:35px; border:0px; background-color:white;">Lag konto</div></div>
@@ -77,7 +78,7 @@ include('policy.php');
                  <div class="headerAreaCoupon">Tine meieri smør</div>
                  <div class="discountAreaCoupon">Få 20% Rabatt på neste kjøp.</div>
                  <div class="pyntDiscount"></div>
-                 <div class="buttonAreaCoupon">Løs inn(1p)</div>
+                 <div class="buttonAreaCoupon" id="butones" onclick="useCoupon(this.id)">Løs inn(1p)</div>
                </div>
                <div class="couponThing">
 

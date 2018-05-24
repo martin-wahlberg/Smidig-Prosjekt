@@ -55,13 +55,13 @@ if (isset($thePoints)) {
   $sql = "UPDATE points SET totalPoints=$theNewPoints WHERE pointmail='$theUser' ";
 
   if ($conn->query($sql) === TRUE) {
-      echo "Record updated successfully";
+      echo "yes";
   } else {
       echo "Error updating record: " . $conn->error;
   }
   }
   else {
-    echo "under";
+    echo "no";
   }
 }
 $conn->close();

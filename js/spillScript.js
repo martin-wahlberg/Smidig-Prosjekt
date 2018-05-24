@@ -55,7 +55,6 @@ function callPoints(){
   };
   xhttp.open("GET", url, true);
   xhttp.send();
-
 }
 function getCook(cookiename) {
 	// Get name followed by anything except a semicolon
