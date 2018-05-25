@@ -18,7 +18,6 @@ function setGameSize(){
   document.getElementById("gameContainer").style.height = clientHeight;
   document.getElementById("gameContainer").style.width = clientWidth;
 }
-
 function gameWinTrue(points){
   window.alert(points);
   document.getElementById("conTainer").style.backgroundColor = "lime";
