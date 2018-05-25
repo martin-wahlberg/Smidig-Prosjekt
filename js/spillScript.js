@@ -42,7 +42,6 @@ function restoreArray(){
   mail = userInfo[2];
   token = userInfo[3];
   document.getElementById("tA1").innerHTML = "Hei, " + firstName + " " + lastName + "!";
-
 }
 function callPoints(){
   var url = "https://kolonial.martinwahlberg.no/pages/getPoints.php?mail=" + mail;

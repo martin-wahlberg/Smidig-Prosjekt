@@ -73,19 +73,26 @@ include('policy.php');
            <div class="profileBtn" id="pBtn1">Bytt inn poeng i tilbudskupponger</div>
            <div class="profileBtn" id="pBtn2">Delta i hovedlotteri</div>
            <div id="couponArea">
-               <div class="couponThing">
+               <div class="couponThing" id="cT1">
                  <div class="imageplace" id="imgC1"></div>
-                 <div class="headerAreaCoupon">Tine meieri smør</div>
-                 <div class="discountAreaCoupon">Få 20% Rabatt på neste kjøp.</div>
-                 <div class="pyntDiscount"></div>
-                 <div class="buttonAreaCoupon" id="butones" onclick="useCoupon(this.id)">Løs inn(1p)</div>
+                 <div class="headerAreaCoupon" id="headC1">Tine meieri smør</div>
+                 <div class="discountAreaCoupon" id="disC1">Få 20% Rabatt på neste kjøp.</div>
+                 <div class="pyntDiscount" id="pynt1"></div>
+                 <div class="buttonAreaCoupon" id="btnC1" >Løs inn(1p)</div>
                </div>
-               <div class="couponThing">
-
-
+               <div class="couponThing" id="cT2">
+                 <div class="imageplace" id="imgC2"></div>
+                 <div class="headerAreaCoupon" id="headC2">Tine meieri smør</div>
+                 <div class="discountAreaCoupon" id="disC2">Få 20% Rabatt på neste kjøp.</div>
+                 <div class="pyntDiscount" id="pynt2"></div>
+                 <div class="buttonAreaCoupon" id="btnC2">Løs inn(1p)</div>
                </div>
-               <div class="couponThing">
-
+               <div class="couponThing" id="cT3">
+                 <div class="imageplace" id="imgC3"></div>
+                 <div class="headerAreaCoupon" id="headC3">Tine meieri smør</div>
+                 <div class="discountAreaCoupon" id="disC3">Få 20% Rabatt på neste kjøp.</div>
+                 <div class="pyntDiscount" id="pynt3"></div>
+                 <div class="buttonAreaCoupon" id="btnC3" ">Løs inn(1p)</div>
 
                </div>
            </div>
