@@ -26,7 +26,6 @@ function gameWinTrue(points){
   callPoints();
 }
 
-
 function setBottomHeaderSizes(){
   var clientHeight = document.getElementById('tA1').clientHeight;
   document.getElementById("tA1").style.lineHeight = clientHeight + "px";
