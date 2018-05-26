@@ -1,7 +1,10 @@
 var chosenCupon;
+var affectedId;
 function profileTogle(){
   $( "#profileArea" ).fadeToggle();
 }
+
+
 
 
 function getCoupons(){
@@ -25,25 +28,26 @@ function makeCoupons(jsonRx) {
     $( "#imgC1").css( "background-image", "url(" + obj.tilbud[0].imgurl + ")" );
     $( "#headC1").html(obj.tilbud[0].tilbud);
     $( "#disC1").html(obj.tilbud[0].fordel);
-    $( "#btnC1" ).attr('onclick', 'useCoupon("' + obj.tilbud[0].id + '")');
+    $( "#btnC1" ).attr('onclick', 'useCoupon("' + obj.tilbud[0].id + '",1)');
 
 
     $( "#imgC2").css( "background-image", "url(" + obj.tilbud[1].imgurl + ")" );
     $( "#headC2").html(obj.tilbud[1].tilbud);
     $( "#disC2").html(obj.tilbud[1].fordel);
-    $( "#btnC2" ).attr('onclick', 'useCoupon("' + obj.tilbud[1].id + '")');
+    $( "#btnC2" ).attr('onclick', 'useCoupon("' + obj.tilbud[1].id + '",2)');
 
 
     $( "#imgC3").css( "background-image", "url(" + obj.tilbud[2].imgurl + ")" );
     $( "#headC3").html(obj.tilbud[2].tilbud);
     $( "#disC3").html(obj.tilbud[2].fordel);
-    $( "#btnC3" ).attr('onclick', 'useCoupon("' + obj.tilbud[2].id + '")');
+    $( "#btnC3" ).attr('onclick', 'useCoupon("' + obj.tilbud[2].id + '",3)');
 
 
   }
 
 
-function useCoupon(idHer){
+function useCoupon(idHer, aff){
+  affectedId = aff;
   chosenCupon = idHer;
   takePoints(1);
 
@@ -78,7 +82,7 @@ function sendCoupon(kup){
   xhttp.send();
 }
 function couponSendt(idslutt){
-  $( "#" + idslutt ).css( "background-color", "#90EE90" );
-  $( "#" + idslutt ).css( "color", "black" );
-  $( "#" + idslutt ).html("Aktivert Gyldig 24t");
+  $( "#btnC" + affectedId ).css( "background-color", "#90EE90" );
+  $( "#btnC" + affectedId ).css( "color", "black" );
+  $( "#btnC" + affectedId ).html("Aktivert Gyldig 24t");
 }

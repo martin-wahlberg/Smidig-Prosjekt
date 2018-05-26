@@ -69,7 +69,7 @@ include('policy.php');
          </div>
 
          <div id="profileArea">
-           <div id="profileHeaderArea"></div>
+           <div id="profileHeaderArea" onmouseover="getCoupons()"></div>
            <div class="profileBtn" id="pBtn1">Bytt inn poeng i tilbudskupponger</div>
            <div class="profileBtn" id="pBtn2">Delta i hovedlotteri</div>
            <div id="couponArea">
