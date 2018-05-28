@@ -69,33 +69,75 @@ include('policy.php');
          </div>
 
          <div id="profileArea">
-           <div id="profileHeaderArea" onmouseover="getCoupons()"></div>
-           <div class="profileBtn" id="pBtn1">Bytt inn poeng i tilbudskupponger</div>
+           <div id="profileHeaderArea">
+             <div id="exitP" onclick="hideSomething()"></div>
+           </div>
+           <div class="profileBtn" id="pBtn1" onclick="getCoupons()">Bytt inn poeng i tilbudskupponger</div>
            <div class="profileBtn" id="pBtn2">Delta i hovedlotteri</div>
+           <div class="profileBtn" id="pBtn3" onclick="getMyC()">Mine kupponger</div>
            <div id="couponArea">
                <div class="couponThing" id="cT1">
                  <div class="imageplace" id="imgC1"></div>
-                 <div class="headerAreaCoupon" id="headC1">Tine meieri smør</div>
-                 <div class="discountAreaCoupon" id="disC1">Få 20% Rabatt på neste kjøp.</div>
+                 <div class="headerAreaCoupon" id="headC1"></div>
+                 <div class="discountAreaCoupon" id="disC1"></div>
                  <div class="pyntDiscount" id="pynt1"></div>
                  <div class="buttonAreaCoupon" id="btnC1" >Løs inn(1p)</div>
                </div>
                <div class="couponThing" id="cT2">
                  <div class="imageplace" id="imgC2"></div>
-                 <div class="headerAreaCoupon" id="headC2">Tine meieri smør</div>
-                 <div class="discountAreaCoupon" id="disC2">Få 20% Rabatt på neste kjøp.</div>
+                 <div class="headerAreaCoupon" id="headC2"></div>
+                 <div class="discountAreaCoupon" id="disC2"></div>
                  <div class="pyntDiscount" id="pynt2"></div>
                  <div class="buttonAreaCoupon" id="btnC2">Løs inn(1p)</div>
                </div>
                <div class="couponThing" id="cT3">
                  <div class="imageplace" id="imgC3"></div>
-                 <div class="headerAreaCoupon" id="headC3">Tine meieri smør</div>
-                 <div class="discountAreaCoupon" id="disC3">Få 20% Rabatt på neste kjøp.</div>
+                 <div class="headerAreaCoupon" id="headC3"></div>
+                 <div class="discountAreaCoupon" id="disC3"></div>
                  <div class="pyntDiscount" id="pynt3"></div>
-                 <div class="buttonAreaCoupon" id="btnC3" ">Løs inn(1p)</div>
-
+                 <div class="buttonAreaCoupon" id="btnC3">Løs inn(1p)</div>
                </div>
            </div>
+         </div>
+
+         <div id="couponsArea">
+           <table id="tabellen">
+  <tr>
+    <th>Produkt</th>
+    <th>Fordel</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
          </div>
 </div>
 </div>

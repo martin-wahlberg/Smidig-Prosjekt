@@ -5,7 +5,7 @@ left:0%;
 width:100%;
 height:100%;
 background-color: red;
-  visibility: visible;
+  visibility: hidden;
 }
 #profileHeaderArea{
   position: absolute;
@@ -26,7 +26,6 @@ background-color: red;
   text-align: center;
   font-size:2vw;
   line-height: 50px;
-  visibility: hidden;
 
 }
 
@@ -38,6 +37,9 @@ background-color: red;
 #pBtn2{
   top:50%;
 }
+#pBtn3{
+  top:70%;
+}
 #couponArea{
   position: absolute;
   background-color: magenta;
@@ -45,6 +47,16 @@ background-color: red;
   height:80%;
   top:20%;
   left:0%;
+  visibility: hidden;
+}
+#couponsArea{
+  position: absolute;
+  background-color: white;
+  width:100%;
+  height:80%;
+  top:20%;
+  left:0%;
+  visibility: hidden;
 }
 .couponThing{
   position: relative;
@@ -110,4 +122,27 @@ background-color: red;
   color:white;
   text-align: center;
   font-size: 1.5vw;
+}
+#exitP{
+  position: absolute;
+  height:35%;
+  width:4%;
+  background-color: red;
+  right:0%;
+  top:0%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
 }
