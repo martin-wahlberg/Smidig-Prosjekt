@@ -18,7 +18,6 @@ function setGameSize(){
   document.getElementById("gameContainer").style.height = clientHeight;
   document.getElementById("gameContainer").style.width = clientWidth;
 }
-
 function gameWinTrue(points){
   window.alert(points);
   document.getElementById("conTainer").style.backgroundColor = "lime";
@@ -26,7 +25,6 @@ function gameWinTrue(points){
   sendPoints();
   callPoints();
 }
-
 
 function setBottomHeaderSizes(){
   var clientHeight = document.getElementById('tA1').clientHeight;
@@ -42,7 +40,6 @@ function restoreArray(){
   mail = userInfo[2];
   token = userInfo[3];
   document.getElementById("tA1").innerHTML = "Hei, " + firstName + " " + lastName + "!";
-
 }
 function callPoints(){
   var url = "https://kolonial.martinwahlberg.no/pages/getPoints.php?mail=" + mail;
@@ -55,7 +52,6 @@ function callPoints(){
   };
   xhttp.open("GET", url, true);
   xhttp.send();
-
 }
 function getCook(cookiename) {
 	// Get name followed by anything except a semicolon
