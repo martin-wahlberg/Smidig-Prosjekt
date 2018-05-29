@@ -73,7 +73,7 @@ include('policy.php');
              <div id="exitP" onclick="hideSomething()"></div>
            </div>
            <div class="profileBtn" id="pBtn1" onclick="getCoupons()">Bytt inn poeng i tilbudskupponger</div>
-           <div class="profileBtn" id="pBtn2">Delta i hovedlotteri</div>
+           <div class="profileBtn" id="pBtn2" onclick="showLottery()">Delta i hovedlotteri</div>
            <div class="profileBtn" id="pBtn3" onclick="getMyC()">Mine kupponger</div>
            <div id="couponArea">
                <div class="couponThing" id="cT1">
@@ -102,43 +102,24 @@ include('policy.php');
 
          <div id="couponsArea">
            <table id="tabellen">
-  <tr>
-    <th>Produkt</th>
-    <th>Fordel</th>
-    <th>Country</th>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-  <tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-    <td>Austria</td>
-  </tr>
-  <tr>
-    <td>Island Trading</td>
-    <td>Helen Bennett</td>
-    <td>UK</td>
-  </tr>
-  <tr>
-    <td>Laughing Bacchus Winecellars</td>
-    <td>Yoshi Tannamuri</td>
-    <td>Canada</td>
-  </tr>
-  <tr>
-    <td>Magazzini Alimentari Riuniti</td>
-    <td>Giovanni Rovelli</td>
-    <td>Italy</td>
-  </tr>
 </table>
          </div>
+         <div id="lotteryArea">
+           <div id="lotteryImage"></div>
+           <div id="lotteryMachine">
+             <div id="overskriftoverskriftLodd">Lever innen søndag kl.18 for å delta</div>
+             <div id="overskriftLodd">Vinn gavekort 1000kr!<br>Få lodd for poeng.</div>
+             <div id="underskriftLodd">Du får mail på søndag om du vinner.</div>
+             <div id="inputATxt">Antall lodd:</div>
+             <div id="numInPlace">
+             <div id="minusIBtn"></div>
+             <input type="number" id="theInput" placeholder="0" min="1">
+             <div id="plusIBtn"></div>
+             </div>
+             <div id="buttonPush">Få 12 lodd</div>
+           </div>
+
+</div>
 </div>
 </div>
 

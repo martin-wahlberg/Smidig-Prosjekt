@@ -48,7 +48,7 @@ function makeCoupons(jsonRx) {
     $( "#btnC3" ).attr('onclick', 'useCoupon("' + obj.tilbud[2].id + '",3)');
 
     $( "#couponArea").css( "visibility", "visible" );
-   hider.push("#couponArea");
+    hider.push("#couponArea");
 
   }
 
@@ -123,13 +123,17 @@ function showCoupons(jsonRx) {
   var obj = JSON.parse(jsonRx);
   var tr = $("<tr>");
   var td = $("<td>");
+  $("#tabellen").html("<tr><th>Produkt</th><th>Fordel</th></tr>")
   for (var i = 0; i < obj.mine.length - 1; i++) {
-    $("#tabellen").append("<tr><td>"+obj.mine[i].tilbud+"</td><td>"+obj.mine[i].fordel+"</td><td>"+obj.mine[i].id+"</td></tr>");
+    $("#tabellen").append("<tr><td>"+obj.mine[i].tilbud+"</td><td>"+obj.mine[i].fordel+"</td></tr>");
+
+  }
+  console.log(jsonRx)
+  hider.push("#couponsArea");
 
   }
 
-  console.log(jsonRx)
-  obj.mine[0].tilbud
-  hider.push("#couponsArea");
-
+  function showLottery(){
+    $( "#lotteryArea").css( "visibility", "visible" );
+    hider.push("#lotteryArea");
   }
