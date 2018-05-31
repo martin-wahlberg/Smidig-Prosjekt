@@ -70,6 +70,9 @@ include('policy.php');
 
          <div id="profileArea">
            <div id="profileHeaderArea">
+             <div id="profileHeaderArea1">
+             Hovedmeny
+           </div>
              <div id="exitP" onclick="hideSomething()"></div>
            </div>
            <div class="profileBtn" id="pBtn1" onclick="getCoupons()">Bytt inn poeng i tilbudskupponger</div>
@@ -112,11 +115,11 @@ include('policy.php');
              <div id="underskriftLodd">Du får mail på søndag om du vinner.</div>
              <div id="inputATxt">Antall lodd:</div>
              <div id="numInPlace">
-             <div id="minusIBtn"></div>
-             <input type="number" id="theInput" placeholder="0" min="1">
-             <div id="plusIBtn"></div>
+             <button id="minusIBtn" onclick="makeSomeNoice('min')"></button>
+             <input type="number" id="theInput" value="0" min="1" onchange="noiceWasHere()">
+             <button id="plusIBtn" onclick="makeSomeNoice('plus')"></button>
              </div>
-             <div id="buttonPush">Få 12 lodd</div>
+             <button id="buttonPush" onclick="getMeTickets()">Velg antall lodd</button>
            </div>
 
 </div>
