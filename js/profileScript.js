@@ -34,18 +34,21 @@ function makeCoupons(jsonRx) {
     $( "#imgC1").css( "background-image", "url(" + obj.tilbud[0].imgurl + ")" );
     $( "#headC1").html(obj.tilbud[0].tilbud);
     $( "#disC1").html(obj.tilbud[0].fordel);
+    $( "#pynt1" ).attr('onclick', 'useCoupon("' + obj.tilbud[0].id + '",1)');
     $( "#btnC1" ).attr('onclick', 'useCoupon("' + obj.tilbud[0].id + '",1)');
 
 
     $( "#imgC2").css( "background-image", "url(" + obj.tilbud[1].imgurl + ")" );
     $( "#headC2").html(obj.tilbud[1].tilbud);
     $( "#disC2").html(obj.tilbud[1].fordel);
+    $( "#pynt2" ).attr('onclick', 'useCoupon("' + obj.tilbud[1].id + '",2)');
     $( "#btnC2" ).attr('onclick', 'useCoupon("' + obj.tilbud[1].id + '",2)');
 
 
     $( "#imgC3").css( "background-image", "url(" + obj.tilbud[2].imgurl + ")" );
     $( "#headC3").html(obj.tilbud[2].tilbud);
     $( "#disC3").html(obj.tilbud[2].fordel);
+    $( "#pynt3" ).attr('onclick', 'useCoupon("' + obj.tilbud[2].id + '",3)');
     $( "#btnC3" ).attr('onclick', 'useCoupon("' + obj.tilbud[2].id + '",3)');
 
     $( "#couponArea").css( "visibility", "visible" );
@@ -106,6 +109,10 @@ function couponSendt(idslutt){
   $( "#btnC" + affectedId ).css( "background-color", "#90EE90" );
   $( "#btnC" + affectedId ).css( "color", "black" );
   $( "#btnC" + affectedId ).html("Aktivert Gyldig 24t");
+  $( "#pynt" + affectedId ).css( "background-image", "url(../img/revet.png)" );
+  $( "#pynt" + affectedId ).attr('onclick', 'alert("Du har brukt denne!")');
+  $( "#btnC" + affectedId ).attr('onclick', 'alert("Du har brukt denne!")');
+
 }
 
 function getMyC(){
