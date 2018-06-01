@@ -16,7 +16,7 @@ body {
   font-size: 16px;
   line-height: 1.42857;
   color: #675f6b;
-  background-color: #fff;
+  background-color: #8255C3;
   overflow:hidden;
 }
 .container{
@@ -25,6 +25,7 @@ body {
   height: 100%;
   top:0;
   left:0;
+  background-color: #8255C3;
   background-color: white;
 overflow: hidden;
 }

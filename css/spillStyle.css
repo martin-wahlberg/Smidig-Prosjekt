@@ -1,14 +1,19 @@
 .gameContainerC{
 position: absolute;
-top:22.5%;
-left:20%;
-height:70%;
-width:60%;
-background-color: white;
+top:17.5%;
+left:12.5%;
+height:75%;
+width:75%;
+background-color: #8255C3;
 }
 
 #tA1{
   width: 15%;
   min-width: 100px;
   left: 1%;
+}
+#tA2{
+  width: 10%;
+  min-width: 100px;
+  right: 1%;
 }
