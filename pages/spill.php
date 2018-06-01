@@ -48,14 +48,14 @@ include('policy.php');
     <div style="position:absolute; right:0; top:35%;">Oppskrifter</div>
   </div>
   <div class="buttonArea" id="lagKonto">
-    <div class="realLKBtn" style="color:white; text-align:center; line-height:35px;" onclick="profileTogle()">Vis profil</div>
+    <button class="realLKBtn" style="color:white; text-align:center; line-height:35px;" onclick="profileTogle()">Vis profil</button>
   </div>
   <div class="buttonArea" id="loggInn">
   <div class="realLKBtn" style="color:#675f6b; text-align:center; line-height:35px; border:0px; background-color:white;">Lag konto</div></div>
   <div class="buttonArea" id="handlekurv" onclick="gameWinTrue()">
     <img src="../img/icons/cart.png" width="28px" height="24px" style="position:absolute; top:25%;">
   </div>
-  <div class="buttonArea" id="expand"><div style="font-size:20px;line-height:60px;"><b><</b></div></div>
+  <div class="buttonArea" id="expand"><div style="font-size:20px;line-height:60px;"><b></b></div></div>
   </div>
 </div>
 <div class="bottomHeader">
@@ -75,30 +75,33 @@ include('policy.php');
            </div>
              <div id="exitP" onclick="hideSomething()"></div>
            </div>
-           <div class="profileBtn" id="pBtn1" onclick="getCoupons()">Bytt inn poeng i tilbudskupponger</div>
-           <div class="profileBtn" id="pBtn2" onclick="showLottery()">Delta i hovedlotteri</div>
-           <div class="profileBtn" id="pBtn3" onclick="getMyC()">Mine kupponger</div>
+           <button class="profileBtn" id="pBtn1" onclick="getCoupons()">Bytt inn poeng i tilbudskupponger</button>
+           <button class="profileBtn" id="pBtn2" onclick="showLottery()">Delta i hovedlotteri</button>
+           <button class="profileBtn" id="pBtn3" onclick="getMyC()">Mine kupponger</button>
            <div id="couponArea">
                <div class="couponThing" id="cT1">
                  <div class="imageplace" id="imgC1"></div>
                  <div class="headerAreaCoupon" id="headC1"></div>
                  <div class="discountAreaCoupon" id="disC1"></div>
                  <div class="pyntDiscount" id="pynt1"></div>
-                 <div class="buttonAreaCoupon" id="btnC1" >Løs inn(1p)</div>
+                 <div class="dividerArea"></div>
+                 <button class="buttonAreaCoupon" id="btnC1" >Løs inn(1p)</button>
                </div>
                <div class="couponThing" id="cT2">
                  <div class="imageplace" id="imgC2"></div>
                  <div class="headerAreaCoupon" id="headC2"></div>
                  <div class="discountAreaCoupon" id="disC2"></div>
                  <div class="pyntDiscount" id="pynt2"></div>
-                 <div class="buttonAreaCoupon" id="btnC2">Løs inn(1p)</div>
+                 <div class="dividerArea"></div>
+                 <button class="buttonAreaCoupon" id="btnC2">Løs inn(1p)</button>
                </div>
                <div class="couponThing" id="cT3">
                  <div class="imageplace" id="imgC3"></div>
                  <div class="headerAreaCoupon" id="headC3"></div>
                  <div class="discountAreaCoupon" id="disC3"></div>
                  <div class="pyntDiscount" id="pynt3"></div>
-                 <div class="buttonAreaCoupon" id="btnC3">Løs inn(1p)</div>
+                 <div class="dividerArea"></div>
+                 <button class="buttonAreaCoupon" id="btnC3">Løs inn(1p)</button>
                </div>
            </div>
          </div>
