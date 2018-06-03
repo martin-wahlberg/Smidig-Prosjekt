@@ -135,6 +135,9 @@ include('policy.php');
 <script>
 
 </script>
-
+<audio style="visibility:hidden;" id="paperSound">
+  <source src="../paper.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 </body>
 </html>

@@ -106,12 +106,11 @@ function sendCoupon(kup){
   xhttp.send();
 }
 function couponSendt(idslutt){
-  $( "#btnC" + affectedId ).css( "background-color", "#90EE90" );
-  $( "#btnC" + affectedId ).css( "color", "black" );
   $( "#btnC" + affectedId ).html("Aktivert Gyldig 24t");
   $( "#pynt" + affectedId ).css( "background-image", "url(../img/revet.png)" );
   $( "#pynt" + affectedId ).attr('onclick', 'alert("Du har brukt denne!")');
   $( "#btnC" + affectedId ).attr('onclick', 'alert("Du har brukt denne!")');
+  $('#paperSound')[0].play();
 
 }
 
