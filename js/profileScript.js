@@ -36,6 +36,8 @@ function makeCoupons(jsonRx) {
     $( "#disC1").html(obj.tilbud[0].fordel);
     $( "#pynt1" ).attr('onclick', 'useCoupon("' + obj.tilbud[0].id + '",1)');
     $( "#btnC1" ).attr('onclick', 'useCoupon("' + obj.tilbud[0].id + '",1)');
+    $( "#btnC1").html("Få kupong(1p)");
+    $( "#pynt1").css( "background-image", "url(../img/hel.png)" );
 
 
     $( "#imgC2").css( "background-image", "url(" + obj.tilbud[1].imgurl + ")" );
@@ -43,6 +45,8 @@ function makeCoupons(jsonRx) {
     $( "#disC2").html(obj.tilbud[1].fordel);
     $( "#pynt2" ).attr('onclick', 'useCoupon("' + obj.tilbud[1].id + '",2)');
     $( "#btnC2" ).attr('onclick', 'useCoupon("' + obj.tilbud[1].id + '",2)');
+    $( "#btnC2").html("Få kupong(1p)");
+    $( "#pynt2").css( "background-image", "url(../img/hel.png)" );
 
 
     $( "#imgC3").css( "background-image", "url(" + obj.tilbud[2].imgurl + ")" );
@@ -50,6 +54,8 @@ function makeCoupons(jsonRx) {
     $( "#disC3").html(obj.tilbud[2].fordel);
     $( "#pynt3" ).attr('onclick', 'useCoupon("' + obj.tilbud[2].id + '",3)');
     $( "#btnC3" ).attr('onclick', 'useCoupon("' + obj.tilbud[2].id + '",3)');
+    $( "#btnC3").html("Få kupong(1p)");
+    $( "#pynt3").css( "background-image", "url(../img/hel.png)" );
 
     $( "#couponArea").css( "visibility", "visible" );
     hider.push("#couponArea");

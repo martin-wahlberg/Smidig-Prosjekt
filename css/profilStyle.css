@@ -161,9 +161,12 @@ background-color: red;
   position: absolute;
   height:35%;
   width:4%;
-  background-color: red;
   right:0%;
   top:0%;
+  background-image: url(../img/icons/kryss.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 table {
     font-family: arial, sans-serif;
