@@ -31,32 +31,16 @@ function getCoupons(){
 function makeCoupons(jsonRx) {
   console.log(jsonRx)
   var obj = JSON.parse(jsonRx);
-    $( "#imgC1").css( "background-image", "url(" + obj.tilbud[0].imgurl + ")" );
-    $( "#headC1").html(obj.tilbud[0].tilbud);
-    $( "#disC1").html(obj.tilbud[0].fordel);
-    $( "#pynt1" ).attr('onclick', 'useCoupon("' + obj.tilbud[0].id + '",1)');
-    $( "#btnC1" ).attr('onclick', 'useCoupon("' + obj.tilbud[0].id + '",1)');
-    $( "#btnC1").html("Få kupong(1p)");
-    $( "#pynt1").css( "background-image", "url(../img/hel.png)" );
-
-
-    $( "#imgC2").css( "background-image", "url(" + obj.tilbud[1].imgurl + ")" );
-    $( "#headC2").html(obj.tilbud[1].tilbud);
-    $( "#disC2").html(obj.tilbud[1].fordel);
-    $( "#pynt2" ).attr('onclick', 'useCoupon("' + obj.tilbud[1].id + '",2)');
-    $( "#btnC2" ).attr('onclick', 'useCoupon("' + obj.tilbud[1].id + '",2)');
-    $( "#btnC2").html("Få kupong(1p)");
-    $( "#pynt2").css( "background-image", "url(../img/hel.png)" );
-
-
-    $( "#imgC3").css( "background-image", "url(" + obj.tilbud[2].imgurl + ")" );
-    $( "#headC3").html(obj.tilbud[2].tilbud);
-    $( "#disC3").html(obj.tilbud[2].fordel);
-    $( "#pynt3" ).attr('onclick', 'useCoupon("' + obj.tilbud[2].id + '",3)');
-    $( "#btnC3" ).attr('onclick', 'useCoupon("' + obj.tilbud[2].id + '",3)');
-    $( "#btnC3").html("Få kupong(1p)");
-    $( "#pynt3").css( "background-image", "url(../img/hel.png)" );
-
+  for (var i = 1; i < 4; i++) {
+    var som = i - 1;
+    $( "#imgC" + i).css( "background-image", "url(" + obj.tilbud[som].imgurl + ")" );
+    $( "#headC" + i).html(obj.tilbud[som].tilbud);
+    $( "#disC" + i).html(obj.tilbud[som].fordel);
+    $( "#pynt" + i).attr('onclick', 'useCoupon("' + obj.tilbud[som].id + '",'+i+')');
+    $( "#btnC" + i ).attr('onclick', 'useCoupon("' + obj.tilbud[som].id + '",'+i+')');
+    $( "#btnC" + i).html("Få kupong(1p)");
+    $( "#pynt" + i).css( "background-image", "url(../img/hel.png)");
+  }
     $( "#couponArea").css( "visibility", "visible" );
     hider.push("#couponArea");
     $( "#profileHeaderArea1").html("Få tilbudskupponger");

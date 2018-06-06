@@ -78,7 +78,7 @@ background-color: red;
   float:left;
   height:95%;
   width:31%;
-  background-color: white;
+  background-color: #EB554B;
   margin-top:1%;
   margin-left: 1.1%;
   margin-right:1.1%;
@@ -132,6 +132,7 @@ background-color: red;
   background-image: url(../img/hel.png);
   background-size:contain;
   background-position: top;
+  border:0px;
 }
 .dividerArea{
   position: absolute;
