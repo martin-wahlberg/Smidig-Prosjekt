@@ -1,6 +1,5 @@
 <?php
 include('policy.php');
-
 ?>
 <html>
 <head>
@@ -85,7 +84,7 @@ include('policy.php');
                  <div class="discountAreaCoupon" id="disC1"></div>
                  <div class="pyntDiscount" id="pynt1"></div>
                  <div class="dividerArea"></div>
-                 <button class="buttonAreaCoupon" id="btnC1" >Løs inn(1p)</button>
+                 <button class="buttonAreaCoupon" id="btnC1" ></button>
                </div>
                <div class="couponThing" id="cT2">
                  <div class="imageplace" id="imgC2"></div>
@@ -93,7 +92,7 @@ include('policy.php');
                  <div class="discountAreaCoupon" id="disC2"></div>
                  <div class="pyntDiscount" id="pynt2"></div>
                  <div class="dividerArea"></div>
-                 <button class="buttonAreaCoupon" id="btnC2">Løs inn(1p)</button>
+                 <button class="buttonAreaCoupon" id="btnC2"></button>
                </div>
                <div class="couponThing" id="cT3">
                  <div class="imageplace" id="imgC3"></div>
@@ -101,7 +100,7 @@ include('policy.php');
                  <div class="discountAreaCoupon" id="disC3"></div>
                  <div class="pyntDiscount" id="pynt3"></div>
                  <div class="dividerArea"></div>
-                 <button class="buttonAreaCoupon" id="btnC3">Løs inn(1p)</button>
+                 <button class="buttonAreaCoupon" id="btnC3"></button>
                </div>
            </div>
          </div>
@@ -135,6 +134,9 @@ include('policy.php');
 <script>
 
 </script>
-
+<audio style="visibility:hidden;" id="paperSound">
+  <source src="../paper.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 </body>
 </html>

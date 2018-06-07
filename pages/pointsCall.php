@@ -1,11 +1,10 @@
 <?php
 include('connection.php');
-$points = $_GET['points'];
+$points = 1;
 $authToken = $_GET['authToken'];
 $userEmail = $_GET['userEmail'];
 $userExsists = false;
 $points = (int)$points;
-$points = $points / 5968385060;
 $userEmail = urldecode($userEmail);
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
