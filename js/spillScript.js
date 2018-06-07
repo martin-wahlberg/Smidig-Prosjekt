@@ -21,8 +21,8 @@ function setGameSize() {
 	document.getElementById("gameContainer").style.width = clientWidth;
 }
 
-function gameWinTrue(points) {
-	window.alert(points);
+function gameWinTrue() {
+	var points = 1;
 	document.getElementById("conTainer").style.backgroundColor = "lime";
 	url = "https://kolonial.martinwahlberg.no/pages/pointsCall.php?points=" + points + "&authToken=" + token + "&userEmail=" + mail;
 	sendPoints();
@@ -38,12 +38,17 @@ function setBottomHeaderSizes() {
 
 function restoreArray() {
 	var jsonUserInfo = getCook('userInfo');
+	if(jsonUserInfo == ""){
+	    window.location.replace("https://kolonial.martinwahlberg.no");
+	}
+	else{
 	userInfo = JSON.parse(jsonUserInfo);
 	firstName = userInfo[0];
 	lastName = userInfo[1];
 	mail = userInfo[2];
 	token = userInfo[3];
 	document.getElementById("tA1").innerHTML = "Hei, " + firstName + " " + lastName + "!";
+	}
 }
 
 function callPoints() {

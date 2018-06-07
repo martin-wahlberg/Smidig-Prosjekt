@@ -1,6 +1,5 @@
 <?php
 include('policy.php');
-
 ?>
 <html>
 <head>
