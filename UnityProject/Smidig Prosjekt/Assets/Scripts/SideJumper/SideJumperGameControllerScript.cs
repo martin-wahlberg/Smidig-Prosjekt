@@ -47,8 +47,12 @@ public class SideJumperGameControllerScript : MonoBehaviour {
 		//UI
 		cT.text = "Score: "+curScore.ToString("F0");
 		hT.text = "HighScore: " + highScore.ToString("F0");
-		dT.text = "Daily: "+ dailyScore.ToString("F0");
 
+		if (dailyScore < 500) {
+			dT.text = "Poeng til du er ferdig: " + (500 - dailyScore).ToString ("F0");
+		} else {
+			dT.text = "Du har nok poeng nå";
+		}
 		//Calculations
 
 		if (Player.activeInHierarchy == false && endCalculationsDone == false) {
@@ -77,7 +81,7 @@ public class SideJumperGameControllerScript : MonoBehaviour {
 
 	void ReloadScene (){
 
-		if (dailyScore > 600) {
+		if (dailyScore > 500) {
 			SceneManager.LoadScene ("BetweenGames");
 		} else {
 			SceneManager.LoadScene (SceneManager.GetActiveScene().name);

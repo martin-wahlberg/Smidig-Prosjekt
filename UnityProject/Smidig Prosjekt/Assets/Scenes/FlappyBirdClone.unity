@@ -302,6 +302,7 @@ MonoBehaviour:
   Model2: {fileID: 0}
   Model3: {fileID: 0}
   ScoreText: {fileID: 1172342919}
+  _points: 0
 --- !u!114 &252229718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1275,7 +1276,12 @@ Prefab:
     - target: {fileID: 114628150770429768, guid: 79d63a6f73f0b492eb31ed632713eaae,
         type: 2}
       propertyPath: spawnCycle
-      value: 2
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114628150770429768, guid: 79d63a6f73f0b492eb31ed632713eaae,
+        type: 2}
+      propertyPath: rRX2
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79d63a6f73f0b492eb31ed632713eaae, type: 2}
@@ -1323,7 +1329,7 @@ Prefab:
         type: 2}
       propertyPath: enemy.Array.data[1]
       value: 
-      objectReference: {fileID: 1149738080965406, guid: 4a1a97c2564404f9ca260b20c154a270,
+      objectReference: {fileID: 1149738080965406, guid: d6ad5b1ff98d2490ba35d443d425ace7,
         type: 2}
     - target: {fileID: 114299780874511456, guid: d031a4d86b7f24da5ade618dd57e393a,
         type: 2}
@@ -1335,6 +1341,18 @@ Prefab:
       propertyPath: spawnCycle
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 114299780874511456, guid: d031a4d86b7f24da5ade618dd57e393a,
+        type: 2}
+      propertyPath: enemy.Array.data[0]
+      value: 
+      objectReference: {fileID: 1631196002387104, guid: 2adaea51741814c408b36a1fd6e9df48,
+        type: 2}
+    - target: {fileID: 114299780874511456, guid: d031a4d86b7f24da5ade618dd57e393a,
+        type: 2}
+      propertyPath: enemy.Array.data[2]
+      value: 
+      objectReference: {fileID: 1553066299542318, guid: 842ec05a66faf4a9aa1ccfcdc12dfbd5,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d031a4d86b7f24da5ade618dd57e393a, type: 2}
   m_IsPrefabParent: 0

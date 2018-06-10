@@ -58,7 +58,7 @@ public class FenceJumpScript : MonoBehaviour {
 			Destroy (other.gameObject);
 
 			if (HitPoints <= 0) {
-				ReloadScene ();
+				SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
 			}
 		}
 
@@ -66,11 +66,9 @@ public class FenceJumpScript : MonoBehaviour {
 
 	void ReloadScene()
 	{
-		if (dailyScore > 0) {
-			SceneManager.LoadScene ("BetweenGames");
-		} else {
-			SceneManager.LoadScene ("VictoryScene");
-		}
+		
+		SceneManager.LoadScene ("BetweenGames");
+		
 	}
 
 }

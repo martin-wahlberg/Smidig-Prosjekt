@@ -15,7 +15,7 @@ public class StartUpScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.anyKeyDown || Time.time > 2) {
+		if (Input.anyKeyDown || Time.time > 1) {
 			BackToMenu ();
 		}
 	}

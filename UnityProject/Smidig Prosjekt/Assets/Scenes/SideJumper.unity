@@ -366,6 +366,7 @@ MonoBehaviour:
   Model2: {fileID: 0}
   Model3: {fileID: 0}
   ScoreText: {fileID: 594096934}
+  _points: 0
 --- !u!61 &507675052
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1154,8 +1155,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 245, y: -5}
-  m_SizeDelta: {x: -510, y: -10}
+  m_AnchoredPosition: {x: 45, y: -5}
+  m_SizeDelta: {x: -110, y: -10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1278869817
 MonoBehaviour:
@@ -1183,7 +1184,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 2
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0

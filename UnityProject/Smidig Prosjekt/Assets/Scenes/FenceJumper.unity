@@ -929,8 +929,8 @@ GameObject:
   - component: {fileID: 1258357566}
   - component: {fileID: 1258357565}
   - component: {fileID: 1258357564}
-  - component: {fileID: 1258357563}
   - component: {fileID: 1258357569}
+  - component: {fileID: 1258357563}
   m_Layer: 0
   m_Name: FlappyPlayer 1
   m_TagString: Untagged

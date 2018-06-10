@@ -3,7 +3,6 @@
 <type fullname="UnityStandardAssets.Utility.FPSCounter" preserve="all"/>
 </assembly>
 <assembly fullname="Assembly-CSharp">
-<type fullname="CountScript" preserve="all"/>
 <type fullname="BetweenGameScript" preserve="all"/>
 <type fullname="BirdScript" preserve="all"/>
 <type fullname="BlockSpawner" preserve="all"/>
@@ -11,6 +10,7 @@
 <type fullname="ColorSwitch" preserve="all"/>
 <type fullname="CandyPickUp" preserve="all"/>
 <type fullname="CloudScript" preserve="all"/>
+<type fullname="CountScript" preserve="all"/>
 <type fullname="DeliverySpawnerScript" preserve="all"/>
 <type fullname="DroneCameraScript" preserve="all"/>
 <type fullname="DroneGameController" preserve="all"/>
@@ -41,10 +41,10 @@
 <type fullname="SpawnerScript" preserve="all"/>
 <type fullname="StartUpScript" preserve="all"/>
 <type fullname="TacoScript" preserve="all"/>
+<type fullname="TerrainMovement" preserve="all"/>
 <type fullname="UiHealthScript" preserve="all"/>
 <type fullname="VictoryScreen" preserve="all"/>
 <type fullname="WebsiteCall" preserve="all"/>
-<type fullname="TerrainMovement" preserve="all"/>
 </assembly>
 <assembly fullname="UnityEngine.UI">
 <type fullname="UnityEngine.EventSystems.EventSystem" preserve="all"/>

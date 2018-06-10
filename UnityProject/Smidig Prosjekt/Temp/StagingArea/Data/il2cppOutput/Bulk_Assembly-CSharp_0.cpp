@@ -348,7 +348,6 @@ extern const uint32_t FenceJumpScript_Start_m3394433825_MetadataUsageId;
 extern Il2CppCodeGenString* _stringLiteral2682272596;
 extern const uint32_t FenceJumpScript_Update_m498997540_MetadataUsageId;
 extern const uint32_t FenceJumpScript_OnTriggerEnter2D_m3531670713_MetadataUsageId;
-extern Il2CppCodeGenString* _stringLiteral233719080;
 extern const uint32_t FenceJumpScript_ReloadScene_m3184877474_MetadataUsageId;
 extern const RuntimeMethod* GameObject_GetComponent_TisFishScript_t1600856205_m2889642796_RuntimeMethod_var;
 extern const uint32_t FishEnemy_Awake_m2923162934_MetadataUsageId;
@@ -395,7 +394,9 @@ extern const RuntimeMethod* List_1_set_Item_m3393612627_RuntimeMethod_var;
 extern const uint32_t LineRendererScript_Update_m2173143788_MetadataUsageId;
 extern const uint32_t MovingPlatformScript_Update_m2637226300_MetadataUsageId;
 extern const uint32_t PlayerHitDetection_Start_m2475157608_MetadataUsageId;
-extern Il2CppCodeGenString* _stringLiteral3750930001;
+extern Il2CppCodeGenString* _stringLiteral1780908003;
+extern Il2CppCodeGenString* _stringLiteral1586421385;
+extern Il2CppCodeGenString* _stringLiteral3167800509;
 extern const uint32_t PlayerHitDetection_Update_m602718683_MetadataUsageId;
 extern const RuntimeMethod* Component_GetComponent_TisCandyPickUp_t80868747_m3207362618_RuntimeMethod_var;
 extern Il2CppCodeGenString* _stringLiteral3244392999;
@@ -421,7 +422,8 @@ extern Il2CppCodeGenString* _stringLiteral502103771;
 extern const uint32_t SideJumperGameControllerScript_Start_m2574014744_MetadataUsageId;
 extern Il2CppCodeGenString* _stringLiteral1756683522;
 extern Il2CppCodeGenString* _stringLiteral863101246;
-extern Il2CppCodeGenString* _stringLiteral2311163179;
+extern Il2CppCodeGenString* _stringLiteral3697637157;
+extern Il2CppCodeGenString* _stringLiteral1500187178;
 extern const uint32_t SideJumperGameControllerScript_Update_m3111019673_MetadataUsageId;
 extern const uint32_t SideJumperGameControllerScript_ReloadScene_m1644248291_MetadataUsageId;
 extern const uint32_t SideJumperPlayerScript_Update_m4111747748_MetadataUsageId;
@@ -6975,8 +6977,6 @@ extern "C"  void Animator_SetBool_m2305662531 (Animator_t69676727 * __this, Stri
 extern "C"  Vector2_t2243707579  Vector2_get_up_m977201173 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.Input::GetKeyUp(UnityEngine.KeyCode)
 extern "C"  bool Input_GetKeyUp_m1008512962 (RuntimeObject * __this /* static, unused */, int32_t p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
-// System.Void FenceJumpScript::ReloadScene()
-extern "C"  void FenceJumpScript_ReloadScene_m3184877474 (FenceJumpScript_t2824671814 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // !!0 UnityEngine.GameObject::GetComponent<FishScript>()
 #define GameObject_GetComponent_TisFishScript_t1600856205_m2889642796(__this, method) ((  FishScript_t1600856205 * (*) (GameObject_t1756533147 *, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m2812611596_gshared)(__this, method)
 // System.String System.Single::ToString(System.String)
@@ -7039,6 +7039,8 @@ extern "C"  void LineRendererScript_AddPoint_m1909885611 (LineRendererScript_t36
 extern "C"  float Mathf_PingPong_m2539699755 (RuntimeObject * __this /* static, unused */, float p0, float p1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)
 extern "C"  bool Object_op_Inequality_m2402264703 (RuntimeObject * __this /* static, unused */, Object_t1021602117 * p0, Object_t1021602117 * p1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.String System.String::Concat(System.String,System.String,System.String)
+extern "C"  String_t* String_Concat_m612901809 (RuntimeObject * __this /* static, unused */, String_t* p0, String_t* p1, String_t* p2, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.MonoBehaviour::Invoke(System.String,System.Single)
 extern "C"  void MonoBehaviour_Invoke_m666563676 (MonoBehaviour_t1158329972 * __this, String_t* p0, float p1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // !!0 UnityEngine.Component::GetComponent<CandyPickUp>()
@@ -9832,6 +9834,8 @@ extern "C"  void FenceJumpScript_OnTriggerEnter2D_m3531670713 (FenceJumpScript_t
 		il2cpp_codegen_initialize_method (FenceJumpScript_OnTriggerEnter2D_m3531670713_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
+	Scene_t1684909666  V_0;
+	memset(&V_0, 0, sizeof(V_0));
 	{
 		Collider2D_t646061738 * L_0 = ___other0;
 		String_t* L_1 = Component_get_tag_m357168014(L_0, /*hidden argument*/NULL);
@@ -9839,7 +9843,7 @@ extern "C"  void FenceJumpScript_OnTriggerEnter2D_m3531670713 (FenceJumpScript_t
 		bool L_2 = String_op_Equality_m1790663636(NULL /*static, unused*/, L_1, _stringLiteral1816890106, /*hidden argument*/NULL);
 		if (!L_2)
 		{
-			goto IL_0040;
+			goto IL_004c;
 		}
 	}
 	{
@@ -9852,14 +9856,17 @@ extern "C"  void FenceJumpScript_OnTriggerEnter2D_m3531670713 (FenceJumpScript_t
 		int32_t L_6 = __this->get_HitPoints_4();
 		if ((((int32_t)L_6) > ((int32_t)0)))
 		{
-			goto IL_0040;
+			goto IL_004c;
 		}
 	}
 	{
-		FenceJumpScript_ReloadScene_m3184877474(__this, /*hidden argument*/NULL);
+		Scene_t1684909666  L_7 = SceneManager_GetActiveScene_m2964039490(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_0 = L_7;
+		String_t* L_8 = Scene_get_name_m745914591((&V_0), /*hidden argument*/NULL);
+		SceneManager_LoadScene_m1619949821(NULL /*static, unused*/, L_8, /*hidden argument*/NULL);
 	}
 
-IL_0040:
+IL_004c:
 	{
 		return;
 	}
@@ -9874,24 +9881,7 @@ extern "C"  void FenceJumpScript_ReloadScene_m3184877474 (FenceJumpScript_t28246
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		float L_0 = __this->get_dailyScore_7();
-		if ((!(((float)L_0) > ((float)(0.0f)))))
-		{
-			goto IL_001f;
-		}
-	}
-	{
 		SceneManager_LoadScene_m1619949821(NULL /*static, unused*/, _stringLiteral2541636755, /*hidden argument*/NULL);
-		goto IL_0029;
-	}
-
-IL_001f:
-	{
-		SceneManager_LoadScene_m1619949821(NULL /*static, unused*/, _stringLiteral233719080, /*hidden argument*/NULL);
-	}
-
-IL_0029:
-	{
 		return;
 	}
 }
@@ -11160,89 +11150,107 @@ extern "C"  void PlayerHitDetection_Update_m602718683 (PlayerHitDetection_t39485
 		bool L_1 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_0, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
 		if (!L_1)
 		{
-			goto IL_0108;
+			goto IL_0132;
 		}
 	}
 	{
-		Text_t356221433 * L_2 = __this->get__scoreText_7();
-		float L_3 = __this->get__points_8();
-		V_0 = ((float)((float)(600.0f)-(float)L_3));
-		String_t* L_4 = Single_ToString_m2359963436((&V_0), _stringLiteral98844844, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		String_t* L_5 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral3750930001, L_4, /*hidden argument*/NULL);
-		VirtActionInvoker1< String_t* >::Invoke(72 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_2, L_5);
-		GameObject_t1756533147 * L_6 = __this->get_Model1_3();
-		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
-		bool L_7 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_6, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
-		if (!L_7)
+		float L_2 = __this->get__points_8();
+		if ((!(((float)L_2) < ((float)(600.0f)))))
 		{
-			goto IL_0108;
+			goto IL_0059;
 		}
 	}
 	{
-		GameObject_t1756533147 * L_8 = __this->get_Model2_4();
+		Text_t356221433 * L_3 = __this->get__scoreText_7();
+		float L_4 = __this->get__points_8();
+		V_0 = ((float)((float)(600.0f)-(float)L_4));
+		String_t* L_5 = Single_ToString_m2359963436((&V_0), _stringLiteral98844844, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_6 = String_Concat_m612901809(NULL /*static, unused*/, _stringLiteral1780908003, L_5, _stringLiteral1586421385, /*hidden argument*/NULL);
+		VirtActionInvoker1< String_t* >::Invoke(72 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_3, L_6);
+		goto IL_0069;
+	}
+
+IL_0059:
+	{
+		Text_t356221433 * L_7 = __this->get__scoreText_7();
+		VirtActionInvoker1< String_t* >::Invoke(72 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_7, _stringLiteral3167800509);
+	}
+
+IL_0069:
+	{
+		GameObject_t1756533147 * L_8 = __this->get_Model1_3();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
 		bool L_9 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_8, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
 		if (!L_9)
 		{
-			goto IL_0108;
+			goto IL_0132;
 		}
 	}
 	{
-		GameObject_t1756533147 * L_10 = __this->get_Model3_5();
+		GameObject_t1756533147 * L_10 = __this->get_Model2_4();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
 		bool L_11 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_10, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
 		if (!L_11)
 		{
-			goto IL_0108;
+			goto IL_0132;
 		}
 	}
 	{
-		float L_12 = __this->get__points_8();
-		if ((!(((float)L_12) < ((float)(200.0f)))))
+		GameObject_t1756533147 * L_12 = __this->get_Model3_5();
+		IL2CPP_RUNTIME_CLASS_INIT(Object_t1021602117_il2cpp_TypeInfo_var);
+		bool L_13 = Object_op_Inequality_m2402264703(NULL /*static, unused*/, L_12, (Object_t1021602117 *)NULL, /*hidden argument*/NULL);
+		if (!L_13)
 		{
-			goto IL_00ab;
+			goto IL_0132;
 		}
 	}
 	{
-		GameObject_t1756533147 * L_13 = __this->get_Model1_3();
-		GameObject_SetActive_m2887581199(L_13, (bool)1, /*hidden argument*/NULL);
-		GameObject_t1756533147 * L_14 = __this->get_Model2_4();
-		GameObject_SetActive_m2887581199(L_14, (bool)0, /*hidden argument*/NULL);
-		GameObject_t1756533147 * L_15 = __this->get_Model3_5();
-		GameObject_SetActive_m2887581199(L_15, (bool)0, /*hidden argument*/NULL);
-		goto IL_0108;
-	}
-
-IL_00ab:
-	{
-		float L_16 = __this->get__points_8();
-		if ((!(((float)L_16) < ((float)(400.0f)))))
+		float L_14 = __this->get__points_8();
+		if ((!(((float)L_14) < ((float)(200.0f)))))
 		{
-			goto IL_00e4;
+			goto IL_00d5;
 		}
 	}
 	{
-		GameObject_t1756533147 * L_17 = __this->get_Model1_3();
+		GameObject_t1756533147 * L_15 = __this->get_Model1_3();
+		GameObject_SetActive_m2887581199(L_15, (bool)1, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_16 = __this->get_Model2_4();
+		GameObject_SetActive_m2887581199(L_16, (bool)0, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_17 = __this->get_Model3_5();
 		GameObject_SetActive_m2887581199(L_17, (bool)0, /*hidden argument*/NULL);
-		GameObject_t1756533147 * L_18 = __this->get_Model2_4();
-		GameObject_SetActive_m2887581199(L_18, (bool)1, /*hidden argument*/NULL);
-		GameObject_t1756533147 * L_19 = __this->get_Model3_5();
-		GameObject_SetActive_m2887581199(L_19, (bool)0, /*hidden argument*/NULL);
-		goto IL_0108;
+		goto IL_0132;
 	}
 
-IL_00e4:
+IL_00d5:
 	{
-		GameObject_t1756533147 * L_20 = __this->get_Model1_3();
-		GameObject_SetActive_m2887581199(L_20, (bool)0, /*hidden argument*/NULL);
-		GameObject_t1756533147 * L_21 = __this->get_Model2_4();
+		float L_18 = __this->get__points_8();
+		if ((!(((float)L_18) < ((float)(400.0f)))))
+		{
+			goto IL_010e;
+		}
+	}
+	{
+		GameObject_t1756533147 * L_19 = __this->get_Model1_3();
+		GameObject_SetActive_m2887581199(L_19, (bool)0, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_20 = __this->get_Model2_4();
+		GameObject_SetActive_m2887581199(L_20, (bool)1, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_21 = __this->get_Model3_5();
 		GameObject_SetActive_m2887581199(L_21, (bool)0, /*hidden argument*/NULL);
-		GameObject_t1756533147 * L_22 = __this->get_Model3_5();
-		GameObject_SetActive_m2887581199(L_22, (bool)1, /*hidden argument*/NULL);
+		goto IL_0132;
 	}
 
-IL_0108:
+IL_010e:
+	{
+		GameObject_t1756533147 * L_22 = __this->get_Model1_3();
+		GameObject_SetActive_m2887581199(L_22, (bool)0, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_23 = __this->get_Model2_4();
+		GameObject_SetActive_m2887581199(L_23, (bool)0, /*hidden argument*/NULL);
+		GameObject_t1756533147 * L_24 = __this->get_Model3_5();
+		GameObject_SetActive_m2887581199(L_24, (bool)1, /*hidden argument*/NULL);
+	}
+
+IL_0132:
 	{
 		return;
 	}
@@ -12052,6 +12060,7 @@ extern "C"  void SideJumperGameControllerScript_Update_m3111019673 (SideJumperGa
 		il2cpp_codegen_initialize_method (SideJumperGameControllerScript_Update_m3111019673_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
+	float V_0 = 0.0f;
 	{
 		Text_t356221433 * L_0 = __this->get_cT_6();
 		float* L_1 = __this->get_address_of_curScore_9();
@@ -12064,63 +12073,83 @@ extern "C"  void SideJumperGameControllerScript_Update_m3111019673 (SideJumperGa
 		String_t* L_6 = Single_ToString_m2359963436(L_5, _stringLiteral98844844, /*hidden argument*/NULL);
 		String_t* L_7 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral863101246, L_6, /*hidden argument*/NULL);
 		VirtActionInvoker1< String_t* >::Invoke(72 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_4, L_7);
-		Text_t356221433 * L_8 = __this->get_dT_8();
-		float* L_9 = __this->get_address_of_dailyScore_11();
-		String_t* L_10 = Single_ToString_m2359963436(L_9, _stringLiteral98844844, /*hidden argument*/NULL);
-		String_t* L_11 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral2311163179, L_10, /*hidden argument*/NULL);
-		VirtActionInvoker1< String_t* >::Invoke(72 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_8, L_11);
-		GameObject_t1756533147 * L_12 = __this->get_Player_2();
-		bool L_13 = GameObject_get_activeInHierarchy_m4242915935(L_12, /*hidden argument*/NULL);
-		if (L_13)
+		float L_8 = __this->get_dailyScore_11();
+		if ((!(((float)L_8) < ((float)(500.0f)))))
 		{
-			goto IL_00cb;
+			goto IL_008d;
 		}
 	}
 	{
-		bool L_14 = __this->get_endCalculationsDone_15();
-		if (L_14)
-		{
-			goto IL_00cb;
-		}
-	}
-	{
-		float L_15 = __this->get_dailyScore_11();
-		PlayerPrefs_SetFloat_m1496426569(NULL /*static, unused*/, _stringLiteral2879723285, L_15, /*hidden argument*/NULL);
-		float L_16 = __this->get_highScore_10();
-		float L_17 = __this->get_curScore_9();
-		if ((!(((float)L_16) < ((float)L_17))))
-		{
-			goto IL_00c0;
-		}
-	}
-	{
-		float L_18 = __this->get_curScore_9();
-		PlayerPrefs_SetFloat_m1496426569(NULL /*static, unused*/, _stringLiteral502103771, L_18, /*hidden argument*/NULL);
-		goto IL_00c0;
+		Text_t356221433 * L_9 = __this->get_dT_8();
+		float L_10 = __this->get_dailyScore_11();
+		V_0 = ((float)((float)(500.0f)-(float)L_10));
+		String_t* L_11 = Single_ToString_m2359963436((&V_0), _stringLiteral98844844, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		String_t* L_12 = String_Concat_m2596409543(NULL /*static, unused*/, _stringLiteral3697637157, L_11, /*hidden argument*/NULL);
+		VirtActionInvoker1< String_t* >::Invoke(72 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_9, L_12);
+		goto IL_009d;
 	}
 
-IL_00c0:
+IL_008d:
+	{
+		Text_t356221433 * L_13 = __this->get_dT_8();
+		VirtActionInvoker1< String_t* >::Invoke(72 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_13, _stringLiteral1500187178);
+	}
+
+IL_009d:
+	{
+		GameObject_t1756533147 * L_14 = __this->get_Player_2();
+		bool L_15 = GameObject_get_activeInHierarchy_m4242915935(L_14, /*hidden argument*/NULL);
+		if (L_15)
+		{
+			goto IL_00f9;
+		}
+	}
+	{
+		bool L_16 = __this->get_endCalculationsDone_15();
+		if (L_16)
+		{
+			goto IL_00f9;
+		}
+	}
+	{
+		float L_17 = __this->get_dailyScore_11();
+		PlayerPrefs_SetFloat_m1496426569(NULL /*static, unused*/, _stringLiteral2879723285, L_17, /*hidden argument*/NULL);
+		float L_18 = __this->get_highScore_10();
+		float L_19 = __this->get_curScore_9();
+		if ((!(((float)L_18) < ((float)L_19))))
+		{
+			goto IL_00ee;
+		}
+	}
+	{
+		float L_20 = __this->get_curScore_9();
+		PlayerPrefs_SetFloat_m1496426569(NULL /*static, unused*/, _stringLiteral502103771, L_20, /*hidden argument*/NULL);
+		goto IL_00ee;
+	}
+
+IL_00ee:
 	{
 		SideJumperGameControllerScript_ReloadScene_m1644248291(__this, /*hidden argument*/NULL);
-		goto IL_011a;
+		goto IL_0148;
 	}
 
-IL_00cb:
+IL_00f9:
 	{
-		SideJumperSpawnerScript_t3999045867 * L_19 = __this->get_sjss_13();
-		float L_20 = L_19->get_timerTarget_11();
-		__this->set_difficultyRating_14(L_20);
-		float L_21 = __this->get_dailyScore_11();
-		float L_22 = Time_get_deltaTime_m2233168104(NULL /*static, unused*/, /*hidden argument*/NULL);
-		float L_23 = __this->get_difficultyRating_14();
-		__this->set_dailyScore_11(((float)((float)L_21+(float)((float)((float)((float)((float)L_22*(float)(10.0f)))/(float)L_23)))));
-		float L_24 = __this->get_curScore_9();
-		float L_25 = Time_get_deltaTime_m2233168104(NULL /*static, unused*/, /*hidden argument*/NULL);
-		float L_26 = __this->get_difficultyRating_14();
-		__this->set_curScore_9(((float)((float)L_24+(float)((float)((float)((float)((float)L_25*(float)(10.0f)))/(float)L_26)))));
+		SideJumperSpawnerScript_t3999045867 * L_21 = __this->get_sjss_13();
+		float L_22 = L_21->get_timerTarget_11();
+		__this->set_difficultyRating_14(L_22);
+		float L_23 = __this->get_dailyScore_11();
+		float L_24 = Time_get_deltaTime_m2233168104(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_25 = __this->get_difficultyRating_14();
+		__this->set_dailyScore_11(((float)((float)L_23+(float)((float)((float)((float)((float)L_24*(float)(10.0f)))/(float)L_25)))));
+		float L_26 = __this->get_curScore_9();
+		float L_27 = Time_get_deltaTime_m2233168104(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_28 = __this->get_difficultyRating_14();
+		__this->set_curScore_9(((float)((float)L_26+(float)((float)((float)((float)((float)L_27*(float)(10.0f)))/(float)L_28)))));
 	}
 
-IL_011a:
+IL_0148:
 	{
 		return;
 	}
@@ -12138,7 +12167,7 @@ extern "C"  void SideJumperGameControllerScript_ReloadScene_m1644248291 (SideJum
 	memset(&V_0, 0, sizeof(V_0));
 	{
 		float L_0 = __this->get_dailyScore_11();
-		if ((!(((float)L_0) > ((float)(600.0f)))))
+		if ((!(((float)L_0) > ((float)(500.0f)))))
 		{
 			goto IL_001f;
 		}
@@ -12821,7 +12850,7 @@ extern "C"  void StartUpScript_Update_m1635638236 (StartUpScript_t3127363610 * _
 	}
 	{
 		float L_1 = Time_get_time_m2216684562(NULL /*static, unused*/, /*hidden argument*/NULL);
-		if ((!(((float)L_1) > ((float)(2.0f)))))
+		if ((!(((float)L_1) > ((float)(1.0f)))))
 		{
 			goto IL_001f;
 		}

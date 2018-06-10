@@ -15154,38 +15154,38 @@ extern const RuntimeType Trigger_t1068911718_0_0_32854 = { (void*)1729, 32854, I
 extern const RuntimeType U3CModuleU3E_t3783534221_0_0_0 = { (void*)1732, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const RuntimeType U3CModuleU3E_t3783534221_1_0_0 = { (void*)1732, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const RuntimeType CountScript_t2693295660_0_0_0 = { (void*)1733, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const RuntimeType CountScript_t2693295660_1_0_0 = { (void*)1733, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
-extern const RuntimeType CountScript_t2693295660_0_0_6 = { (void*)1733, 6, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const RuntimeType BetweenGameScript_t263133849_0_0_0 = { (void*)1733, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const RuntimeType BetweenGameScript_t263133849_1_0_0 = { (void*)1733, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+
+extern const RuntimeType BirdScript_t4009162268_0_0_0 = { (void*)1734, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const RuntimeType BirdScript_t4009162268_1_0_0 = { (void*)1734, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+
+extern const RuntimeType BlockSpawner_t3346566143_0_0_0 = { (void*)1735, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const RuntimeType BlockSpawner_t3346566143_1_0_0 = { (void*)1735, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const RuntimeType BlockSpawner_t3346566143_0_0_1 = { (void*)1735, 1, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+
+extern const RuntimeType BreakoutBall_t523669116_0_0_0 = { (void*)1736, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const RuntimeType BreakoutBall_t523669116_1_0_0 = { (void*)1736, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+
+extern const RuntimeType ColorSwitch_t1566324105_0_0_0 = { (void*)1737, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const RuntimeType ColorSwitch_t1566324105_1_0_0 = { (void*)1737, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+
+extern const RuntimeType CandyPickUp_t80868747_0_0_0 = { (void*)1738, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const RuntimeType CandyPickUp_t80868747_1_0_0 = { (void*)1738, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+
+extern const RuntimeType CloudScript_t2549093662_0_0_0 = { (void*)1739, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const RuntimeType CloudScript_t2549093662_1_0_0 = { (void*)1739, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+
+extern const RuntimeType CountScript_t2693295660_0_0_0 = { (void*)1740, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const RuntimeType CountScript_t2693295660_1_0_0 = { (void*)1740, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const RuntimeType CountScript_t2693295660_0_0_6 = { (void*)1740, 6, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 
 extern const RuntimeType DroneScript_t1093111943_0_0_1 = { (void*)1747, 1, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const RuntimeType DroneScript_t1093111943_0_0_0 = { (void*)1747, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const RuntimeType DroneScript_t1093111943_1_0_0 = { (void*)1747, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const RuntimeType U3CWaitForSecondsU3Ec__Iterator0_t2085535193_0_0_0 = { (void*)1734, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const RuntimeType U3CWaitForSecondsU3Ec__Iterator0_t2085535193_1_0_0 = { (void*)1734, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
-
-extern const RuntimeType BetweenGameScript_t263133849_0_0_0 = { (void*)1735, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const RuntimeType BetweenGameScript_t263133849_1_0_0 = { (void*)1735, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
-
-extern const RuntimeType BirdScript_t4009162268_0_0_0 = { (void*)1736, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const RuntimeType BirdScript_t4009162268_1_0_0 = { (void*)1736, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
-
-extern const RuntimeType BlockSpawner_t3346566143_0_0_0 = { (void*)1737, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const RuntimeType BlockSpawner_t3346566143_1_0_0 = { (void*)1737, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
-extern const RuntimeType BlockSpawner_t3346566143_0_0_1 = { (void*)1737, 1, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-
-extern const RuntimeType BreakoutBall_t523669116_0_0_0 = { (void*)1738, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const RuntimeType BreakoutBall_t523669116_1_0_0 = { (void*)1738, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
-
-extern const RuntimeType ColorSwitch_t1566324105_0_0_0 = { (void*)1739, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const RuntimeType ColorSwitch_t1566324105_1_0_0 = { (void*)1739, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
-
-extern const RuntimeType CandyPickUp_t80868747_0_0_0 = { (void*)1740, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const RuntimeType CandyPickUp_t80868747_1_0_0 = { (void*)1740, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
-
-extern const RuntimeType CloudScript_t2549093662_0_0_0 = { (void*)1741, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const RuntimeType CloudScript_t2549093662_1_0_0 = { (void*)1741, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const RuntimeType U3CWaitForSecondsU3Ec__Iterator0_t2085535193_0_0_0 = { (void*)1741, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const RuntimeType U3CWaitForSecondsU3Ec__Iterator0_t2085535193_1_0_0 = { (void*)1741, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
 extern const RuntimeType DeliverySpawnerScript_t319855105_0_0_0 = { (void*)1742, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const RuntimeType DeliverySpawnerScript_t319855105_1_0_0 = { (void*)1742, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
@@ -15290,17 +15290,17 @@ extern const RuntimeType SpawnerScript_t3094523757_1_0_0 = { (void*)1772, 0, IL2
 extern const RuntimeType StartUpScript_t3127363610_0_0_0 = { (void*)1773, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const RuntimeType StartUpScript_t3127363610_1_0_0 = { (void*)1773, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const RuntimeType UiHealthScript_t1574290565_0_0_0 = { (void*)1775, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const RuntimeType UiHealthScript_t1574290565_1_0_0 = { (void*)1775, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const RuntimeType TerrainMovement_t401784176_0_0_0 = { (void*)1775, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const RuntimeType TerrainMovement_t401784176_1_0_0 = { (void*)1775, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const RuntimeType VictoryScreen_t4016666718_0_0_0 = { (void*)1776, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const RuntimeType VictoryScreen_t4016666718_1_0_0 = { (void*)1776, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const RuntimeType UiHealthScript_t1574290565_0_0_0 = { (void*)1776, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const RuntimeType UiHealthScript_t1574290565_1_0_0 = { (void*)1776, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const RuntimeType WebsiteCall_t2230925283_0_0_0 = { (void*)1777, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const RuntimeType WebsiteCall_t2230925283_1_0_0 = { (void*)1777, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const RuntimeType VictoryScreen_t4016666718_0_0_0 = { (void*)1777, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const RuntimeType VictoryScreen_t4016666718_1_0_0 = { (void*)1777, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
-extern const RuntimeType TerrainMovement_t401784176_0_0_0 = { (void*)1778, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
-extern const RuntimeType TerrainMovement_t401784176_1_0_0 = { (void*)1778, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
+extern const RuntimeType WebsiteCall_t2230925283_0_0_0 = { (void*)1778, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
+extern const RuntimeType WebsiteCall_t2230925283_1_0_0 = { (void*)1778, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
 
 extern const RuntimeType U3CModuleU3E_t3783534222_0_0_0 = { (void*)1779, 0, IL2CPP_TYPE_CLASS, 0, 0, 0 };
 extern const RuntimeType U3CModuleU3E_t3783534222_1_0_0 = { (void*)1779, 0, IL2CPP_TYPE_CLASS, 0, 1, 0 };
@@ -23079,11 +23079,6 @@ extern const RuntimeType* const  g_Il2CppTypeTable[7914] =
 	&FieldWithTarget_t2256174789_1_0_0,
 	&U3CModuleU3E_t3783534221_0_0_0,
 	&U3CModuleU3E_t3783534221_1_0_0,
-	&CountScript_t2693295660_0_0_0,
-	&CountScript_t2693295660_1_0_0,
-	&DroneScript_t1093111943_0_0_1,
-	&U3CWaitForSecondsU3Ec__Iterator0_t2085535193_0_0_0,
-	&U3CWaitForSecondsU3Ec__Iterator0_t2085535193_1_0_0,
 	&BetweenGameScript_t263133849_0_0_0,
 	&BetweenGameScript_t263133849_1_0_0,
 	&BirdScript_t4009162268_0_0_0,
@@ -23102,6 +23097,11 @@ extern const RuntimeType* const  g_Il2CppTypeTable[7914] =
 	&CandyPickUp_t80868747_1_0_0,
 	&CloudScript_t2549093662_0_0_0,
 	&CloudScript_t2549093662_1_0_0,
+	&CountScript_t2693295660_0_0_0,
+	&CountScript_t2693295660_1_0_0,
+	&DroneScript_t1093111943_0_0_1,
+	&U3CWaitForSecondsU3Ec__Iterator0_t2085535193_0_0_0,
+	&U3CWaitForSecondsU3Ec__Iterator0_t2085535193_1_0_0,
 	&DeliverySpawnerScript_t319855105_0_0_0,
 	&DeliverySpawnerScript_t319855105_1_0_0,
 	&DroneCameraScript_t1978173822_0_0_0,
@@ -23185,6 +23185,9 @@ extern const RuntimeType* const  g_Il2CppTypeTable[7914] =
 	&StartUpScript_t3127363610_1_0_0,
 	&TacoScript_t4130697206_0_0_0,
 	&TacoScript_t4130697206_1_0_0,
+	&TerrainMovement_t401784176_0_0_0,
+	&TerrainMovement_t401784176_1_0_0,
+	&Rigidbody_t4233889191_0_0_1,
 	&UiHealthScript_t1574290565_0_0_0,
 	&UiHealthScript_t1574290565_1_0_0,
 	&FenceJumpScript_t2824671814_0_0_1,
@@ -23192,9 +23195,6 @@ extern const RuntimeType* const  g_Il2CppTypeTable[7914] =
 	&VictoryScreen_t4016666718_1_0_0,
 	&WebsiteCall_t2230925283_0_0_0,
 	&WebsiteCall_t2230925283_1_0_0,
-	&TerrainMovement_t401784176_0_0_0,
-	&TerrainMovement_t401784176_1_0_0,
-	&Rigidbody_t4233889191_0_0_1,
 	&U3CModuleU3E_t3783534222_0_0_0,
 	&U3CModuleU3E_t3783534222_1_0_0,
 	&FPSCounter_t584591591_0_0_0,

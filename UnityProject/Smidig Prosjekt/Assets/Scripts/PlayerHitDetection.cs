@@ -29,8 +29,11 @@ public class PlayerHitDetection : MonoBehaviour {
 
 		if (_scoreText != null) {
 
-			_scoreText.text = "Points needed for ticket: " +  (600 - _points).ToString ("F0");
-
+			if (_points < 600) {
+				_scoreText.text = "Du mangler " + (600 - _points).ToString ("F0") + " poeng for å vinne.";
+			} else {
+				_scoreText.text = "Du har nok poeng for å vinne.";
+			}
 			if (Model1 != null && Model2 != null && Model3 != null) {
 
 				if (_points < 200) {

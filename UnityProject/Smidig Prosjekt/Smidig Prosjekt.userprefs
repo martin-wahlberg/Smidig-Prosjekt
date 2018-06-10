@@ -1,15 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BetweenGameScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/StartUpScript.cs">
     <Files>
-      <File FileName="Assets/Scripts/Drone/DroneScript.cs" Line="43" Column="3" />
-      <File FileName="Assets/Scripts/Drone/DeliverySpawnerScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Drone/DronePlatformScript.cs" Line="42" Column="4" />
-      <File FileName="Assets/CountScript.cs" Line="35" Column="42" />
-      <File FileName="Assets/Scripts/Fishton/FishEnemy.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Fishton/FishScript.cs" Line="94" Column="4" />
-      <File FileName="Assets/Scripts/WebsiteCall.cs" Line="10" Column="23" />
-      <File FileName="Assets/Scripts/BetweenGameScript.cs" Line="31" Column="46" />
+      <File FileName="Assets/Scripts/GameOverDetection.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Breakout/BlockSpawner.cs" Line="38" Column="17" />
+      <File FileName="Assets/Scripts/BetweenGameScript.cs" Line="25" Column="38" />
+      <File FileName="Assets/Scripts/Breakout/BreakoutBall.cs" Line="32" Column="16" />
+      <File FileName="Assets/Scripts/Slalom/SlalomScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/StartUpScript.cs" Line="18" Column="40" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

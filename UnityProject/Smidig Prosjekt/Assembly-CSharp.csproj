@@ -51,7 +51,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CountScript.cs" />
      <Compile Include="Assets\Scripts\BetweenGameScript.cs" />
      <Compile Include="Assets\Scripts\BirdScript.cs" />
      <Compile Include="Assets\Scripts\Breakout\BlockSpawner.cs" />
@@ -59,6 +58,7 @@
      <Compile Include="Assets\Scripts\Breakout\ColorSwitch.cs" />
      <Compile Include="Assets\Scripts\CandyPickUp.cs" />
      <Compile Include="Assets\Scripts\CloudScript.cs" />
+     <Compile Include="Assets\Scripts\CountScript.cs" />
      <Compile Include="Assets\Scripts\Drone\DeliverySpawnerScript.cs" />
      <Compile Include="Assets\Scripts\Drone\DroneCameraScript.cs" />
      <Compile Include="Assets\Scripts\Drone\DroneGameController.cs" />
@@ -89,10 +89,10 @@
      <Compile Include="Assets\Scripts\SpawnerScript.cs" />
      <Compile Include="Assets\Scripts\StartUpScript.cs" />
      <Compile Include="Assets\Scripts\TacoScript.cs" />
+     <Compile Include="Assets\Scripts\TerrainMovement.cs" />
      <Compile Include="Assets\Scripts\UiHealthScript.cs" />
      <Compile Include="Assets\Scripts\VictoryScreen\VictoryScreen.cs" />
      <Compile Include="Assets\Scripts\WebsiteCall.cs" />
-     <Compile Include="Assets\TerrainMovement.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
