@@ -31,11 +31,9 @@ include('policy.php');
   <div class="topHeader">
   <div class="leftArea">
     <div class="logoArea" id="logoArea">
-      <img src="../img/logo.png" id="logo" alt="Smiley face" width="100%" height="37%" style="position:absolute; top:35%;">
+      <img src="../img/logo.png" id="logo" width="100%" height="37%" style="position:absolute; top:35%;">
   </div>
-  <div class="searchArea">
-    <input type="text" placeholder="Søk i 6000 varer!" style="position:absolute;height:100%;width:100%;">
-  </div>
+
   </div>
   <div class="rightArea">
   <div class="buttonArea" id="varer">
@@ -50,10 +48,7 @@ include('policy.php');
     <button class="realLKBtn" style="color:white; text-align:center; line-height:35px;" onclick="profileTogle()">Vis profil</button>
   </div>
   <div class="buttonArea" id="loggInn">
-  <div class="realLKBtn" style="color:#675f6b; text-align:center; line-height:35px; border:0px; background-color:white;">Lag konto</div></div>
-  <div class="buttonArea" id="handlekurv" onclick="gameWinTrue()">
-    <img src="../img/icons/cart.png" width="28px" height="24px" style="position:absolute; top:25%;">
-  </div>
+  <a target="_blank" href="https://kolonial.no/bruker/registrer/"><div class="realLKBtn" style="color:#675f6b; text-align:center; line-height:35px; border:0px; background-color:white;">Lag konto</div></a></div>
   <div class="buttonArea" id="expand"><div style="font-size:20px;line-height:60px;"><b></b></div></div>
   </div>
 </div>
@@ -74,9 +69,9 @@ include('policy.php');
            </div>
              <div id="exitP" onclick="hideSomething()"></div>
            </div>
-           <button class="profileBtn" id="pBtn1" onclick="getCoupons()">Bytt inn poeng i tilbudskupponger</button>
+           <button class="profileBtn" id="pBtn1" onclick="getCoupons()">Bytt inn poeng i tilbudskuponger</button>
            <button class="profileBtn" id="pBtn2" onclick="showLottery()">Delta i hovedlotteri</button>
-           <button class="profileBtn" id="pBtn3" onclick="getMyC()">Mine kupponger</button>
+           <button class="profileBtn" id="pBtn3" onclick="getMyC()">Mine kuponger</button>
            <div id="couponArea">
                <div class="couponThing" id="cT1">
                  <div class="imageplace" id="imgC1"></div>

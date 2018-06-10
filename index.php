@@ -20,9 +20,7 @@
   <div class="logoArea" id="logoArea">
     <img src="./img/logo.png" id="logo" alt="Smiley face" width="176px" height="21px" style="position:absolute; top:35%;">
   </div>
-  <div class="searchArea">
-    <input id="search" type="text" placeholder="Søk i 6000 varer!" style="position:absolute;height:100%;width:100%; border:1px solid grey;">
-  </div>
+
   </div>
   <div class="rightArea">
   <div class="buttonArea" id="varer">
@@ -34,14 +32,8 @@
     <div style="position:absolute; right:0; top:35%;">Oppskrifter</div>
   </div>
   <div class="buttonArea" id="lagKonto">
-    <div class="realLKBtn" style="color:white; text-align:center; line-height:35px;" onclick="gameWinTrue()">Lag konto</div>
+    <a target="_blank" href="https://kolonial.no/bruker/registrer/"><div class="realLKBtn" style="color:white; text-align:center; line-height:35px;" onclick="gameWinTrue()">Lag konto</div></a>
   </div>
-  <div class="buttonArea" id="loggInn">
-  <div class="realLKBtn" style="color:#675f6b; text-align:center; line-height:35px; border:0px; background-color:white;">Lag konto</div></div>
-  <div class="buttonArea" id="handlekurv" onclick="gameWinTrue()">
-    <img src="./img/icons/cart.png" width="28px" height="24px" style="position:absolute; top:25%;">
-  </div>
-  <div class="buttonArea" id="expand"><div style="font-size:20px;line-height:60px;"><b><</b></div></div>
   </div>
 </div>
 <div class="bottomHeader"></div>

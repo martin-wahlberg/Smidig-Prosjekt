@@ -55,9 +55,11 @@ function hideSomething() {
 }
 
 function useCoupon(idHer, aff) {
+	if(idHer != "ugyldig"){
 	affectedId = aff;
 	chosenCupon = idHer;
 	takePoints(1);
+}
 }
 
 function takePoints(minus) {
@@ -102,7 +104,6 @@ function getMyC() {
 	hider.push("#couponsArea");
 	$("#profileHeaderArea1").html("Mine tilbudskupponger");
 	var url = "https://kolonial.martinwahlberg.no/pages/myCoup.php?mail=" + mail;
-	console.log(url)
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
@@ -116,7 +117,13 @@ function getMyC() {
 }
 
 function showCoupons(jsonRx) {
+	 try {
 	var obj = JSON.parse(jsonRx);
+}
+catch (e) {
+	$("#tabellen").html('<h1 style="text-align:center; lineHeight:10vw;">Ingen aktive kuponger</h1>')
+	return;
+}
 	var tr = $("<tr>");
 	var td = $("<td>");
 	$("#tabellen").html("<tr><th>Produkt</th><th>Fordel</th></tr>")
