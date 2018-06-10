@@ -23,7 +23,6 @@ function setGameSize() {
 
 function gameWinTrue() {
 	var points = 1;
-	document.getElementById("conTainer").style.backgroundColor = "lime";
 	url = "https://kolonial.martinwahlberg.no/pages/pointsCall.php?points=" + points + "&authToken=" + token + "&userEmail=" + mail;
 	sendPoints();
 	callPoints();
@@ -77,6 +76,7 @@ function sendPoints() {
 		if (this.readyState == 4 && this.status == 200) {
 			var jsonTx = this.responseText;
 			//Callback her
+			callPoints();
 		}
 	};
 	xhttp.open("GET", url, true);

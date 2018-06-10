@@ -1,0 +1,231 @@
+fileFormatVersion: 2
+guid: 1158704e7e6f34bc5b45cae269cfc3e0
+timeCreated: 1527594707
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Propeller_4
+    21300002: PropellerMax
+    21300004: Propeller_1
+    21300006: Propeller_2
+    21300008: Propeller_3
+    21300010: PropellerMid
+    21300012: PropellerSmall
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: -1
+    mipBias: -1
+    wrapU: 2
+    wrapV: 2
+    wrapW: 2
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 1
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 1024
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 1024
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PropellerMax
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 514
+        width: 238
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PropellerMid
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 513
+        width: 150
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PropellerSmall
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 513
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline:
+    - - {x: -110, y: 139}
+      - {x: -111, y: 135}
+      - {x: -111, y: 128}
+      - {x: -93, y: 117}
+      - {x: -54, y: 110}
+      - {x: -41, y: 110}
+      - {x: -34, y: 121}
+      - {x: -34, y: 139}
+    - - {x: -26, y: 139}
+      - {x: -30, y: 137}
+      - {x: -32, y: 130}
+      - {x: -32, y: 122}
+      - {x: -20, y: 111}
+      - {x: -5, y: 111}
+      - {x: 17, y: 114}
+      - {x: 37, y: 118}
+      - {x: 46, y: 131}
+      - {x: 46, y: 139}
+    - - {x: 91, y: 139}
+      - {x: 86, y: 132}
+      - {x: 86, y: 123}
+      - {x: 94, y: 111}
+      - {x: 97, y: 111}
+      - {x: 104, y: 115}
+      - {x: 104, y: 138}
+      - {x: 100, y: 139}
+    - - {x: -395, y: 130}
+      - {x: -360, y: 113}
+      - {x: -290, y: 113}
+      - {x: -282, y: 115}
+      - {x: -282, y: 139}
+      - {x: -283, y: 143}
+      - {x: -395, y: 143}
+    - - {x: -259, y: 143}
+      - {x: -266, y: 139}
+      - {x: -266, y: 124}
+      - {x: -265, y: 120}
+      - {x: -259, y: 113}
+      - {x: -183, y: 113}
+      - {x: -153, y: 121}
+      - {x: -153, y: 143}
+    physicsShape:
+    - - {x: -27, y: 138}
+      - {x: -29, y: 135}
+      - {x: -29, y: 121}
+      - {x: -20, y: 112}
+      - {x: 4, y: 112}
+      - {x: 39, y: 124}
+      - {x: 43, y: 130}
+      - {x: 43, y: 138}
+    - - {x: 101, y: 137}
+      - {x: 98, y: 138}
+      - {x: 92, y: 138}
+      - {x: 89, y: 137}
+      - {x: 89, y: 121}
+      - {x: 91, y: 112}
+      - {x: 98, y: 112}
+      - {x: 103, y: 119}
+      - {x: 103, y: 133}
+    - - {x: -41, y: 138}
+      - {x: -108, y: 138}
+      - {x: -109, y: 136}
+      - {x: -109, y: 127}
+      - {x: -87, y: 113}
+      - {x: -41, y: 113}
+      - {x: -37, y: 129}
+      - {x: -37, y: 137}
+    - - {x: -302, y: 140}
+      - {x: -350, y: 142}
+      - {x: -392, y: 142}
+      - {x: -393, y: 140}
+      - {x: -393, y: 135}
+      - {x: -388, y: 131}
+      - {x: -366, y: 121}
+      - {x: -329, y: 114}
+      - {x: -306, y: 114}
+      - {x: -287, y: 122}
+      - {x: -285, y: 128}
+      - {x: -285, y: 135}
+      - {x: -288, y: 138}
+    - - {x: -155, y: 141}
+      - {x: -158, y: 142}
+      - {x: -188, y: 142}
+      - {x: -246, y: 140}
+      - {x: -260, y: 138}
+      - {x: -263, y: 135}
+      - {x: -263, y: 125}
+      - {x: -240, y: 114}
+      - {x: -233, y: 114}
+      - {x: -228, y: 115}
+      - {x: -196, y: 119}
+      - {x: -159, y: 129}
+      - {x: -155, y: 136}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
