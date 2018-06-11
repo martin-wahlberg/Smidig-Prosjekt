@@ -31,7 +31,9 @@ include('policy.php');
   <div class="topHeader">
   <div class="leftArea">
     <div class="logoArea" id="logoArea">
+      <a href="https://kolonial.martinwahlberg.no">
       <img src="../img/logo.png" id="logo" width="100%" height="37%" style="position:absolute; top:35%;">
+    </a>
   </div>
 
   </div>
