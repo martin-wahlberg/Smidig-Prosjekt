@@ -97,6 +97,7 @@ function couponSendt(idslutt) {
 	$("#pynt" + affectedId).attr('onclick', 'alert("Du har brukt denne!")');
 	$("#btnC" + affectedId).attr('onclick', 'alert("Du har brukt denne!")');
 	$('#paperSound')[0].play();
+	callPoints();
 }
 
 function getMyC() {
@@ -160,6 +161,7 @@ function noiceWasHere() {
 	theNoice = $("#theInput").val();
 	theNoice = parseInt(theNoice);
 	$("#buttonPush").html("Få " + theNoice + " lodd!");
+	callPoints();
 }
 
 function getMeTickets() {
